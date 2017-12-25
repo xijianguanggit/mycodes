@@ -1,0 +1,17 @@
+*.d
+*.o
+*.class
+*.swp
+*.pyc
+*.iml
+GPATH
+GRTAGS
+GTAGS
+**/catalina.base_IS_UNDEFINED/**/*
+**/.idea/**/*
+**/.gradle/**/*
+**/bin/*
+**/build/*
+**/out/*
+**/.DS_Store
+**/target/*

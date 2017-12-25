@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jcip-examples-src">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jcip-examples-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

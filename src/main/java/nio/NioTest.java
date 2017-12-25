@@ -9,6 +9,10 @@ import java.nio.IntBuffer;
 public class NioTest {
 
     public static void main(String[] args){
+
+    }
+
+    private static void testBuffer(){
         IntBuffer intBuffer = IntBuffer.allocate(8);
         print(intBuffer);
         intBuffer.put(new int[]{1,3,4,5});
@@ -16,7 +20,7 @@ public class NioTest {
 
         intBuffer.flip();
 
-       System.out.println( intBuffer.get());
+        System.out.println( intBuffer.get());
         System.out.println( intBuffer.get());
         print(intBuffer);
         intBuffer.clear();
@@ -28,7 +32,6 @@ public class NioTest {
         print(intBuffer);
         System.out.println( intBuffer.get(2));
     }
-
     private static void print(Buffer buffer){
         System.out.println("position:"+buffer.position()+",limit:"+buffer.limit()+",capacity:"+buffer.capacity());
     }
