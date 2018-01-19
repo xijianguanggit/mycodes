@@ -25,7 +25,7 @@ public class TestRedis {
             System.out.println(s);
         }
         jedis.del(key);
-
+        //jedis.get
         for(String s:jedis.smembers("charge:test")){
             System.out.println(s);
         }

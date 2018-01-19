@@ -1,0 +1,11 @@
+private String serialNumber;
+
+	private String serialSource;
+
+	private String enterpriseId;
+
+	private Long count;
+
+	private Integer months;
+
+	private Long startTime;

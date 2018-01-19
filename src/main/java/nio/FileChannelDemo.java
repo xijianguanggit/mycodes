@@ -15,12 +15,18 @@ public class FileChannelDemo {
         try {
             RandomAccessFile accessFile = new RandomAccessFile("data/testFileChannel.txt","rw");
             FileChannel fileChannel = accessFile.getChannel();
-            ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
+            ByteBuffer byteBuffer = ByteBuffer.allocate(48);
             int byteRead = fileChannel.read(byteBuffer);
             while (byteRead != -1){
-                System.out.println("Read "+byteBuffer.toString());
-
+                System.out.println("Read "+ byteRead);
+                byteBuffer.flip();
+                while (byteBuffer.hasRemaining()){
+                    System.out.print((char)byteBuffer.get());
+                }
+                byteBuffer.clear();
+                byteRead = fileChannel.read(byteBuffer);
             }
+            accessFile.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
