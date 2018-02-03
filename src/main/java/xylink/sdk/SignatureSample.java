@@ -97,8 +97,10 @@ public class SignatureSample {
         String url = "http://localhost:8080/api/rest/external/v1/conferenceControl/meetings/status?enterpriseId=f31e1a72c2186269f69ac4513a6b44687b9dddb7";
         // String url="http://localhost:8080/api/rest/external/v1/conferenceControl/912345678915/online/count?exceptName=111&enterpriseId=f31e1a72c2186269f69ac4513a6b44687b9dddb7";
         String token = "71e42646265ec40d85b50842ed6dd76853618a9487a914fdb9097197dad6b609";
-        String jsonEntity = "{\"meetings\":\"912345678915,913811550578,913088888888,913581735469\"}";
-        System.out.println(new SignatureSample().computeSignature(jsonEntity, "POST", token, url));
+        //String jsonEntity = "{\"meetings\":\"912345678915,913811550578,913088888888,913581735469\"}";
+        String jsonEntity = "[\"912345678915\",\"913811550578\"]";
+        System.out.println(url+"&signature="+new SignatureSample().computeSignature(jsonEntity, "POST", token, url));
+        System.out.println(jsonEntity);
     }
     static void onlineCount(){
          String url="http://localhost:8081/api/rest/external/v1/conferenceControl/912345678915/online/count?exceptName=HN-HYBRID-DEV-NE2005&enterpriseId=f31e1a72c2186269f69ac4513a6b44687b9dddb7";
@@ -119,9 +121,9 @@ public class SignatureSample {
         System.out.println(new SignatureSample().computeSignature("", "DELETE", token, url));
     }
     public static void main(String[] args) throws Exception {
-        //meetingStatus();
+        meetingStatus();
         //onlineCount();
         //currentMeetingDetail();
-        nemoPutDisplayName();
+        //nemoPutDisplayName();
     }
 }
