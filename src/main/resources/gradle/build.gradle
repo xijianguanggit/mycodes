@@ -1,0 +1,24 @@
+task hello <<{
+    println "hello"
+}
+
+task upper << {
+    String someString = 'mY_nAmE'
+    println "Original: " + someString
+    println "Upper case: " + someString.toUpperCase()
+}
+task count << {
+    4.times { print "$it " }
+}
+
+task intro(dependsOn: hello) << {
+    println "I'm Gradle"
+}
+//动态创建任务
+4.times { counter ->
+    task "task$counter" << {
+        println "I'm task number $counter"
+    }
+}
+//加入依赖
+task0.dependsOn task2, task3

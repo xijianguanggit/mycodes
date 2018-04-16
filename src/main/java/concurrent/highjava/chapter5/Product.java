@@ -1,7 +1,7 @@
 package concurrent.highjava.chapter5;
 
 /**
- * Created by 13 on 2017/5/6.
+ * Created by 13 on 2017/5/base.
  */
 public final class Product {
     private final String no;

@@ -15,10 +15,12 @@
     <orderEntry type="library" name="jcip-annotations-src" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.9.1" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.10:2.3.4" level="project" />
-    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.4" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe:config:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.12:2.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe:config:1.3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-java8-compat_2.12:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-remote_2.10:2.3.4" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.10:2.3.4" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.8.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.uncommons.maths:uncommons-maths:1.2.2a" level="project" />

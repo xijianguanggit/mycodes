@@ -1,0 +1,1019 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='37365' time_ms='1523692136985'>
+<vm_version>
+<name>
+Java HotSpot(TM) 64-Bit Server VM
+</name>
+<release>
+25.111-b14
+</release>
+<info>
+Java HotSpot(TM) 64-Bit Server VM (25.111-b14) for bsd-amd64 JRE (1.8.0_111-b14), built on Sep 22 2016 15:31:41 by &quot;java_re&quot; with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+</info>
+</vm_version>
+<vm_arguments>
+<args>
+-Xcomp -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -XX:+LogCompilation -XX:LogFile=jit.log -XX:CompileCommand=dontinline,*Bar.sum -XX:CompileCommand=compileonly,*Bar.sum 
+</args>
+<command>
+concurrent.Bar
+</command>
+<launcher>
+SUN_STANDARD
+</launcher>
+<properties>
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.version=25.111-b14
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+java.vm.info=compiled mode, sharing
+java.ext.dirs=/Users/wangdecheng/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed
+sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib
+java.library.path=/Users/wangdecheng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
+java.class.path=.
+sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.8
+java.vm.vendor=Oracle Corporation
+sun.java.command=concurrent.Bar
+sun.java.launcher=SUN_STANDARD
+</properties>
+</vm_arguments>
+<tty>
+<writer thread='6915'/>
+CompilerOracle: dontinline *Bar.sum
+CompilerOracle: compileonly *Bar.sum
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Thread &lt;init&gt; (Ljava/lang/ThreadGroup;Ljava/lang/String;)V' bytes='49' count='4' iicount='4' stamp='0.068'/>
+<writer thread='18947'/>
+<thread_logfile thread='18947' filename='/var/folders/m_/s6ky6t754f5853_9wsq409zc0000gn/T//hs_c18947_pid37365.log'/>
+<writer thread='19971'/>
+<thread_logfile thread='19971' filename='/var/folders/m_/s6ky6t754f5853_9wsq409zc0000gn/T//hs_c19971_pid37365.log'/>
+<writer thread='20483'/>
+<thread_logfile thread='20483' filename='/var/folders/m_/s6ky6t754f5853_9wsq409zc0000gn/T//hs_c20483_pid37365.log'/>
+<writer thread='6915'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandle &lt;clinit&gt; ()V' bytes='45' count='0' iicount='0' stamp='0.068'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class desiredAssertionStatus ()Z' bytes='54' count='22' iicount='22' stamp='0.068'/>
+<writer thread='19459'/>
+<thread_logfile thread='19459' filename='/var/folders/m_/s6ky6t754f5853_9wsq409zc0000gn/T//hs_c19459_pid37365.log'/>
+<writer thread='6915'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl &lt;clinit&gt; ()V' bytes='110' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Integer valueOf (I)Ljava/lang/Integer;' bytes='32' count='3' iicount='3' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Integer &lt;init&gt; (I)V' bytes='10' count='256' iicount='256' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl$1 &lt;init&gt; ([Ljava/lang/Object;)V' bytes='10' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Object &lt;init&gt; ()V' bytes='1' count='1456' iicount='1456' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/AccessController doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object;' bytes='0' count='35' iicount='35' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl$1 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl$1 run ()Ljava/lang/Void;' bytes='37' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuilder &lt;init&gt; ()V' bytes='7' count='86' iicount='86' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getName ()Ljava/lang/String;' bytes='21' count='15' iicount='15' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;' bytes='8' count='143' iicount='143' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuilder toString ()Ljava/lang/String;' bytes='17' count='86' iicount='86' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Integer getInteger (Ljava/lang/String;I)Ljava/lang/Integer;' bytes='19' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Integer getInteger (Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;' bytes='23' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/System getProperty (Ljava/lang/String;)Ljava/lang/String;' bytes='25' count='33' iicount='33' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Integer intValue ()I' bytes='5' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl$2 &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl$3 &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassValue &lt;clinit&gt; ()V' bytes='32' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/concurrent/atomic/AtomicInteger &lt;init&gt; ()V' bytes='5' count='1' iicount='1' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl$4 &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassValue &lt;init&gt; ()V' bytes='43' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/concurrent/atomic/AtomicInteger getAndAdd (I)I' bytes='12' count='3' iicount='3' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassValue$Identity &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassValue$Version &lt;init&gt; (Ljava/lang/ClassValue;)V' bytes='22' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassValue$Entry &lt;clinit&gt; ()V' bytes='29' count='0' iicount='0' stamp='0.069'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassValue$Entry &lt;init&gt; (Ljava/lang/ClassValue$Version;Ljava/lang/Object;)V' bytes='11' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ref/WeakReference &lt;init&gt; (Ljava/lang/Object;)V' bytes='6' count='2' iicount='2' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassValue$Entry &lt;init&gt; (Ljava/lang/ClassValue$Version;)V' bytes='11' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleImpl initStatics ()V' bytes='8' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MemberName$Factory &lt;clinit&gt; ()V' bytes='32' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MemberName$Factory &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Object getClass ()Ljava/lang/Class;' bytes='0' count='24' iicount='24' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleStatics &lt;clinit&gt; ()V' bytes='157' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Unsafe getUnsafe ()Lsun/misc/Unsafe;' bytes='28' count='8' iicount='8' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleStatics$1 &lt;init&gt; ([Ljava/lang/Object;)V' bytes='10' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleStatics$1 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleStatics$1 run ()Ljava/lang/Void;' bytes='130' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Boolean getBoolean (Ljava/lang/String;)Z' bytes='16' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Boolean parseBoolean (Ljava/lang/String;)Z' bytes='19' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Boolean valueOf (Z)Ljava/lang/Boolean;' bytes='14' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String hashCode ()I' bytes='55' count='375' backedge_count='6144' iicount='375' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/System getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;' bytes='26' count='2' iicount='2' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String equalsIgnoreCase (Ljava/lang/String;)Z' bytes='48' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Boolean booleanValue ()Z' bytes='5' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;' bytes='34' count='10' iicount='10' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Unsafe objectFieldOffset (Ljava/lang/reflect/Field;)J' bytes='0' count='13' iicount='13' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MemberName &lt;clinit&gt; ()V' bytes='17' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleNatives &lt;clinit&gt; ()V' bytes='111' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleNatives registerNatives ()V' bytes='0' count='0' iicount='0' stamp='0.070'/>
+<blob name='MethodHandlesAdapterBlob' size='32000'>
+<sect index='1' size='32000' free='31628'/>
+</blob>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/invoke/MethodHandleNatives getConstant (I)I' bytes='0' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PostVMInitHook run ()V' bytes='4' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PostVMInitHook trackJavaUsage ()V' bytes='20' count='0' iicount='0' stamp='0.070'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient &lt;clinit&gt; ()V' bytes='34' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/concurrent/atomic/AtomicBoolean &lt;clinit&gt; ()V' bytes='36' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/concurrent/atomic/AtomicBoolean &lt;init&gt; (Z)V' bytes='18' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient getPropertyPrivileged (Ljava/lang/String;)Ljava/lang/String;' bytes='6' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient getPropertyPrivileged (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;' bytes='16' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$1 &lt;init&gt; (Ljava/lang/String;Ljava/lang/String;)V' bytes='15' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$1 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$1 run ()Ljava/lang/String;' bytes='12' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient run (Ljava/lang/String;Ljava/lang/String;)V' bytes='62' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient printDebug (Ljava/lang/String;)V' bytes='14' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$4 &lt;init&gt; (Lsun/usagetracker/UsageTrackerClient;Ljava/lang/String;Ljava/lang/String;)V' bytes='20' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$4 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$4 run ()Ljava/lang/Void;' bytes='131' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/System currentTimeMillis ()J' bytes='0' count='26' iicount='26' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient access$000 (Lsun/usagetracker/UsageTrackerClient;J)V' bytes='6' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient setupAndTimestamp (J)V' bytes='36' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/concurrent/atomic/AtomicBoolean compareAndSet (ZZ)Z' bytes='35' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Unsafe compareAndSwapInt (Ljava/lang/Object;JII)Z' bytes='0' count='6' iicount='6' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient getConfigFilePrivileged ()Ljava/io/File;' bytes='129' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient getOSSpecificConfigFilePath ()Ljava/lang/String;' bytes='108' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String toLowerCase ()Ljava/lang/String;' bytes='8' count='12' iicount='12' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Locale getLanguage ()Ljava/lang/String;' bytes='8' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/util/locale/BaseLocale getLanguage ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Character toLowerCase (I)I' bytes='9' count='49' iicount='49' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String startsWith (Ljava/lang/String;)Z' bytes='7' count='15' iicount='15' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$3 &lt;init&gt; (Ljava/lang/String;)V' bytes='10' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$3 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient$3 run ()Ljava/io/File;' bytes='25' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File &lt;init&gt; (Ljava/lang/String;)V' bytes='47' count='9' iicount='9' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File exists ()Z' bytes='43' count='9' iicount='9' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String getBytes (Ljava/lang/String;)[B' bytes='27' count='36' iicount='36' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String length ()I' bytes='6' count='384' iicount='384' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String charAt (I)C' bytes='29' count='1920' iicount='1920' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient registerUsage (J)V' bytes='510' count='0' iicount='0' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File getCanonicalPath ()Ljava/lang/String;' bytes='31' count='14' iicount='14' stamp='0.071'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient getPathHash (Ljava/lang/String;)Ljava/lang/String;' bytes='39' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Long toHexString (J)Ljava/lang/String;' bytes='6' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Long toUnsignedString0 (JI)Ljava/lang/String;' bytes='49' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Long numberOfLeadingZeros (J)I' bytes='94' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Math max (II)I' bytes='11' count='13' iicount='13' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Long formatUnsignedLong (JI[CII)I' bytes='52' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String &lt;init&gt; ([CZ)V' bytes='10' count='11' iicount='11' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File &lt;init&gt; (Ljava/lang/String;Ljava/lang/String;)V' bytes='113' count='1' iicount='1' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream &lt;init&gt; (Ljava/io/File;)V' bytes='7' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream &lt;init&gt; (Ljava/io/File;Z)V' bytes='114' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ref/Finalizer register (Ljava/lang/Object;)V' bytes='10' count='5' iicount='5' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File getPath ()Ljava/lang/String;' bytes='5' count='38' iicount='38' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File isInvalid ()Z' bytes='47' count='48' iicount='48' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileDescriptor &lt;init&gt; ()V' bytes='10' count='1' iicount='1' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream open (Ljava/lang/String;Z)V' bytes='7' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream open0 (Ljava/lang/String;Z)V' bytes='0' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/System lineSeparator ()Ljava/lang/String;' bytes='4' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuilder append (J)Ljava/lang/StringBuilder;' bytes='8' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/AbstractStringBuilder append (J)Ljava/lang/AbstractStringBuilder;' bytes='70' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Long stringSize (J)I' bytes='38' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Long getChars (JI[C)V' bytes='221' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream write ([B)V' bytes='13' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream writeBytes ([BIIZ)V' bytes='0' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream close ()V' bytes='62' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream$1 &lt;init&gt; (Ljava/io/FileOutputStream;)V' bytes='10' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileDescriptor closeAll (Ljava/io/Closeable;)V' bytes='215' count='1' iicount='1' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream access$000 (Ljava/io/FileOutputStream;)V' bytes='5' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileOutputStream close0 ()V' bytes='0' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient access$100 (Lsun/usagetracker/UsageTrackerClient;Ljava/lang/String;)V' bytes='6' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient printVerbose (Ljava/lang/String;)V' bytes='14' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/usagetracker/UsageTrackerClient access$200 ()Z' bytes='4' count='0' iicount='0' stamp='0.072'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper &lt;clinit&gt; ()V' bytes='67' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper &lt;init&gt; (Ljava/lang/String;I)V' bytes='7' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Enum &lt;init&gt; (Ljava/lang/String;I)V' bytes='15' count='2' iicount='2' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/VM getSavedProperty (Ljava/lang/String;)Ljava/lang/String;' bytes='27' count='2' iicount='2' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader getSystemClassLoader ()Ljava/lang/ClassLoader;' bytes='32' count='1' iicount='1' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper makePlatformString (Z[B)Ljava/lang/String;' bytes='70' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper initOutput (Z)V' bytes='17' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/Charset isSupported (Ljava/lang/String;)Z' bytes='13' count='6' iicount='6' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String &lt;init&gt; ([BLjava/lang/String;)V' bytes='10' count='61' iicount='61' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper checkAndLoadMain (ZILjava/lang/String;)Ljava/lang/Class;' bytes='220' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String replace (CC)Ljava/lang/String;' bytes='127' count='11' backedge_count='250' iicount='11' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader loadClass (Ljava/lang/String;)Ljava/lang/Class;' bytes='7' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Launcher$AppClassLoader loadClass (Ljava/lang/String;Z)Ljava/lang/Class;' bytes='85' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String lastIndexOf (I)I' bytes='13' count='41' iicount='41' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/System getSecurityManager ()Ljava/lang/SecurityManager;' bytes='4' count='190' iicount='190' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath knownToNotExist (Ljava/lang/String;)Z' bytes='24' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader loadClass (Ljava/lang/String;Z)Ljava/lang/Class;' bytes='122' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader getClassLoadingLock (Ljava/lang/String;)Ljava/lang/Object;' bytes='35' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/concurrent/ConcurrentHashMap putIfAbsent (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' bytes='8' count='19' iicount='19' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader findLoadedClass (Ljava/lang/String;)Ljava/lang/Class;' bytes='16' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader checkName (Ljava/lang/String;)Z' bytes='43' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String indexOf (I)I' bytes='7' count='195' iicount='195' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/VM allowArraySyntax ()Z' bytes='4' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader findLoadedClass0 (Ljava/lang/String;)Ljava/lang/Class;' bytes='0' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/System nanoTime ()J' bytes='0' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader findBootstrapClassOrNull (Ljava/lang/String;)Ljava/lang/Class;' bytes='16' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String indexOf (II)I' bytes='70' count='198' backedge_count='4096' iicount='198' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader findBootstrapClass (Ljava/lang/String;)Ljava/lang/Class;' bytes='0' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader findClass (Ljava/lang/String;)Ljava/lang/Class;' bytes='47' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader$1 &lt;init&gt; (Ljava/net/URLClassLoader;Ljava/lang/String;)V' bytes='15' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/AccessController doPrivileged (Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader findNative (Ljava/lang/ClassLoader;Ljava/lang/String;)J' bytes='86' count='3' iicount='3' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Vector elementAt (I)Ljava/lang/Object;' bytes='48' count='2' iicount='2' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader$NativeLibrary find (Ljava/lang/String;)J' bytes='0' count='0' iicount='0' stamp='0.073'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader$1 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader$1 run ()Ljava/lang/Class;' bytes='63' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String concat (Ljava/lang/String;)Ljava/lang/String;' bytes='47' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String getChars ([CI)V' bytes='16' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V' bytes='0' count='640' iicount='640' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader access$000 (Ljava/net/URLClassLoader;)Lsun/misc/URLClassPath;' bytes='5' count='2' iicount='2' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath getResource (Ljava/lang/String;Z)Lsun/misc/Resource;' bytes='83' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath getLookupCache (Ljava/lang/String;)[I' bytes='98' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath getNextLoader ([II)Lsun/misc/URLClassPath$Loader;' bytes='88' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath getLoader (I)Lsun/misc/URLClassPath$Loader;' bytes='197' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayList size ()I' bytes='5' count='10' iicount='10' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Stack empty ()Z' bytes='13' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Stack pop ()Ljava/lang/Object;' bytes='19' count='1' iicount='1' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/util/URLUtil urlNoFragString (Ljava/net/URL;)Ljava/lang/String;' bytes='114' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getProtocol ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getHost ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getPort ()I' bytes='5' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getDefaultPort ()I' bytes='8' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLStreamHandler getDefaultPort ()I' bytes='2' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getFile ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashMap containsKey (Ljava/lang/Object;)Z' bytes='18' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath getLoader (Ljava/net/URL;)Lsun/misc/URLClassPath$Loader;' bytes='25' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$3 &lt;init&gt; (Lsun/misc/URLClassPath;Ljava/net/URL;)V' bytes='15' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/AccessController doPrivileged (Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;' bytes='0' count='3' iicount='3' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$3 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$3 run ()Lsun/misc/URLClassPath$Loader;' bytes='86' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String endsWith (Ljava/lang/String;)Z' bytes='17' count='12' iicount='12' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader &lt;clinit&gt; ()V' bytes='7' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/SharedSecrets getJavaUtilZipFileAccess ()Lsun/misc/JavaUtilZipFileAccess;' bytes='18' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Unsafe ensureClassInitialized (Ljava/lang/Class;)V' bytes='0' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile &lt;clinit&gt; ()V' bytes='48' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile initIDs ()V' bytes='0' count='0' iicount='0' stamp='0.074'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile$1 &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/SharedSecrets setJavaUtilZipFileAccess (Lsun/misc/JavaUtilZipFileAccess;)V' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath access$200 (Lsun/misc/URLClassPath;)Ljava/net/URLStreamHandler;' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader &lt;init&gt; (Ljava/net/URL;Ljava/net/URLStreamHandler;Ljava/util/HashMap;)V' bytes='141' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuilder append (Ljava/lang/Object;)Ljava/lang/StringBuilder;' bytes='9' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String valueOf (Ljava/lang/Object;)Ljava/lang/String;' bytes='14' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL toString ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL toExternalForm ()Ljava/lang/String;' bytes='9' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLStreamHandler toExternalForm (Ljava/net/URL;)Ljava/lang/String;' bytes='219' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getAuthority ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getPath ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getQuery ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getRef ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuffer &lt;clinit&gt; ()V' bytes='52' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/ObjectStreamField &lt;init&gt; (Ljava/lang/String;Ljava/lang/Class;)V' bytes='8' count='17' iicount='17' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Short &lt;clinit&gt; ()V' bytes='9' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getPrimitiveClass (Ljava/lang/String;)Ljava/lang/Class;' bytes='0' count='7' iicount='7' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/AbstractStringBuilder ensureCapacityInternal (I)V' bytes='27' count='256' iicount='256' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuffer &lt;init&gt; (I)V' bytes='6' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/AbstractStringBuilder &lt;init&gt; (I)V' bytes='12' count='99' iicount='99' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;' bytes='13' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/AbstractStringBuilder append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;' bytes='50' count='170' iicount='170' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/StringBuffer toString ()Ljava/lang/String;' bytes='36' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Arrays copyOfRange ([CII)[C' bytes='63' count='250' iicount='250' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL &lt;init&gt; (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/net/URLStreamHandler;)V' bytes='308' count='12' iicount='12' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$Loader &lt;init&gt; (Ljava/net/URL;)V' bytes='10' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader isOptimizable (Ljava/net/URL;)Z' bytes='10' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String equals (Ljava/lang/Object;)Z' bytes='81' count='383' backedge_count='1740' iicount='383' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/ParseUtil decode (Ljava/lang/String;)Ljava/lang/String;' bytes='316' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/MetaIndex forJar (Ljava/io/File;)Lsun/misc/MetaIndex;' bytes='13' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashMap get (Ljava/lang/Object;)Ljava/lang/Object;' bytes='23' count='9' iicount='9' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File compareTo (Ljava/io/File;)I' bytes='9' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/UnixFileSystem compare (Ljava/io/File;Ljava/io/File;)I' bytes='12' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String compareTo (Ljava/lang/String;)I' bytes='78' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader getClassPath ()[Ljava/net/URL;' bytes='86' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath validateLookupCache (ILjava/lang/String;)V' bytes='80' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' bytes='13' count='31' iicount='31' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayList get (I)Ljava/lang/Object;' bytes='11' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayList rangeCheck (I)V' bytes='22' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayList elementData (I)Ljava/lang/Object;' bytes='7' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader getResource (Ljava/lang/String;Z)Lsun/misc/Resource;' bytes='85' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/MetaIndex mayContain (Ljava/lang/String;)Z' bytes='51' count='0' iicount='0' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Math min (II)I' bytes='11' count='640' iicount='640' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String &lt;init&gt; ([CII)V' bytes='82' count='256' iicount='256' stamp='0.075'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String getChars (II[CI)V' bytes='62' count='256' iicount='256' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader ensureOpen ()V' bytes='32' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader$1 &lt;init&gt; (Lsun/misc/URLClassPath$JarLoader;)V' bytes='10' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader$1 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader$1 run ()Ljava/lang/Void;' bytes='184' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath access$400 ()Z' bytes='4' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$500 (Lsun/misc/URLClassPath$JarLoader;)Ljava/net/URL;' bytes='5' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$700 (Lsun/misc/URLClassPath$JarLoader;Ljava/net/URL;)Ljava/util/jar/JarFile;' bytes='6' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader getJarFile (Ljava/net/URL;)Ljava/util/jar/JarFile;' bytes='81' count='0' iicount='0' stamp='0.076'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/FileURLMapper &lt;init&gt; (Ljava/net/URL;)V' bytes='10' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/FileURLMapper exists ()Z' bytes='25' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/FileURLMapper getPath ()Ljava/lang/String;' bytes='69' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile &lt;clinit&gt; ()V' bytes='176' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JavaUtilJarAccessImpl &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/SharedSecrets setJavaUtilJarAccess (Lsun/misc/JavaUtilJarAccess;)V' bytes='5' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile &lt;init&gt; (Ljava/lang/String;)V' bytes='15' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile &lt;init&gt; (Ljava/io/File;ZI)V' bytes='12' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile &lt;init&gt; (Ljava/io/File;I)V' bytes='10' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/StandardCharsets &lt;clinit&gt; ()V' bytes='49' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/Charset forName (Ljava/lang/String;)Ljava/nio/charset/Charset;' bytes='20' count='5' iicount='5' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/US_ASCII &lt;init&gt; ()V' bytes='10' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/Charset &lt;init&gt; (Ljava/lang/String;[Ljava/lang/String;)V' bytes='60' count='1' backedge_count='2' iicount='1' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class$1 run ()Ljava/lang/Object;' bytes='5' count='3' iicount='3' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/ISO_8859_1 &lt;init&gt; ()V' bytes='10' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/UTF_16BE &lt;init&gt; ()V' bytes='10' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/Unicode &lt;init&gt; (Ljava/lang/String;[Ljava/lang/String;)V' bytes='7' count='1' iicount='1' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/UTF_16LE &lt;init&gt; ()V' bytes='10' count='0' iicount='0' stamp='0.077'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/UTF_16 &lt;init&gt; ()V' bytes='10' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile &lt;init&gt; (Ljava/io/File;ILjava/nio/charset/Charset;)V' bytes='197' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/WeakHashMap &lt;init&gt; ()V' bytes='9' count='3' iicount='3' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayDeque &lt;clinit&gt; ()V' bytes='17' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayDeque &lt;init&gt; ()V' bytes='14' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/AbstractCollection &lt;init&gt; ()V' bytes='5' count='23' iicount='23' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipCoder get (Ljava/nio/charset/Charset;)Ljava/util/zip/ZipCoder;' bytes='9' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipCoder &lt;init&gt; (Ljava/nio/charset/Charset;)V' bytes='27' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/Charset name ()Ljava/lang/String;' bytes='5' count='3' iicount='3' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File lastModified ()J' bytes='33' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/UnixFileSystem getLastModifiedTime (Ljava/io/File;)J' bytes='0' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile open (Ljava/lang/String;IJZ)J' bytes='0' count='0' iicount='0' stamp='0.078'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter &lt;clinit&gt; ()V' bytes='17' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf$GetPerfAction &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf$GetPerfAction run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf$GetPerfAction run ()Lsun/misc/Perf;' bytes='4' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf &lt;clinit&gt; ()V' bytes='14' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf registerNatives ()V' bytes='0' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf getPerf ()Lsun/misc/Perf;' bytes='27' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter getZipFileOpenTime ()Lsun/misc/PerfCounter;' bytes='4' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter$CoreCounters &lt;clinit&gt; ()V' bytes='49' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter newPerfCounter (Ljava/lang/String;)Lsun/misc/PerfCounter;' bytes='10' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter &lt;init&gt; (Ljava/lang/String;I)V' bytes='37' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Perf createLong (Ljava/lang/String;IIJ)Ljava/nio/ByteBuffer;' bytes='0' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectByteBuffer &lt;clinit&gt; ()V' bytes='41' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/Bits unsafe ()Lsun/misc/Unsafe;' bytes='4' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Unsafe arrayBaseOffset (Ljava/lang/Class;)I' bytes='0' count='10' iicount='10' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/Bits unaligned ()Z' bytes='78' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/security/action/GetPropertyAction &lt;init&gt; (Ljava/lang/String;)V' bytes='10' count='13' iicount='13' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/security/action/GetPropertyAction run ()Ljava/lang/Object;' bytes='5' count='19' iicount='19' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectByteBuffer &lt;init&gt; (JI)V' bytes='24' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/MappedByteBuffer &lt;init&gt; (IIII)V' bytes='15' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/ByteBuffer &lt;init&gt; (IIII)V' bytes='12' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/ByteBuffer &lt;init&gt; (IIII[BI)V' bytes='45' count='3' iicount='3' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/ByteOrder nativeOrder ()Ljava/nio/ByteOrder;' bytes='4' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/Bits byteOrder ()Ljava/nio/ByteOrder;' bytes='20' count='4' iicount='4' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/ByteBuffer order (Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;' bytes='48' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectByteBuffer asLongBuffer ()Ljava/nio/LongBuffer;' bytes='151' count='0' iicount='0' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/Buffer position ()I' bytes='5' count='19' iicount='19' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/Buffer limit ()I' bytes='5' count='8' iicount='8' stamp='0.079'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectLongBufferU &lt;clinit&gt; ()V' bytes='41' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectLongBufferU &lt;init&gt; (Lsun/nio/ch/DirectBuffer;IIIII)V' bytes='30' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/LongBuffer &lt;init&gt; (IIII)V' bytes='12' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/LongBuffer &lt;init&gt; (IIII[JI)V' bytes='22' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/Buffer &lt;init&gt; (IIII)V' bytes='121' count='6' iicount='6' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectByteBuffer address ()J' bytes='5' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter addElapsedTimeFrom (J)V' bytes='10' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter add (J)V' bytes='18' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter get ()J' bytes='9' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectLongBufferU get (I)J' bytes='16' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/Buffer checkIndex (I)I' bytes='22' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectLongBufferU ix (I)J' bytes='10' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Unsafe getLong (J)J' bytes='0' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/DirectLongBufferU put (IJ)Ljava/nio/LongBuffer;' bytes='18' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Unsafe putLong (JJ)V' bytes='0' count='1' iicount='1' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter getZipFileCount ()Lsun/misc/PerfCounter;' bytes='4' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter increment ()V' bytes='6' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getTotal (J)I' bytes='0' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile startsWithLOC (J)Z' bytes='0' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader checkJar (Ljava/util/jar/JarFile;)Ljava/util/jar/JarFile;' bytes='51' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$602 (Lsun/misc/URLClassPath$JarLoader;Ljava/util/jar/JarFile;)Ljava/util/jar/JarFile;' bytes='7' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$600 (Lsun/misc/URLClassPath$JarLoader;)Ljava/util/jar/JarFile;' bytes='5' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$900 (Lsun/misc/URLClassPath$JarLoader;)Lsun/misc/MetaIndex;' bytes='5' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex &lt;clinit&gt; ()V' bytes='14' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex getJarIndex (Ljava/util/jar/JarFile;Lsun/misc/MetaIndex;)Lsun/misc/JarIndex;' bytes='43' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile getJarEntry (Ljava/lang/String;)Ljava/util/jar/JarEntry;' bytes='9' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile getEntry (Ljava/lang/String;)Ljava/util/zip/ZipEntry;' bytes='22' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntry (Ljava/lang/String;)Ljava/util/zip/ZipEntry;' bytes='86' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile ensureOpen ()V' bytes='37' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipCoder getBytes (Ljava/lang/String;)[B' bytes='192' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipCoder encoder ()Ljava/nio/charset/CharsetEncoder;' bytes='35' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/UTF_8 newEncoder ()Ljava/nio/charset/CharsetEncoder;' bytes='10' count='3' iicount='3' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/CharsetEncoder onMalformedInput (Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder;' bytes='26' count='3' iicount='3' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/CharsetEncoder onUnmappableCharacter (Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder;' bytes='26' count='3' iicount='3' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/CharsetEncoder reset ()Ljava/nio/charset/CharsetEncoder;' bytes='11' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/CharsetEncoder implReset ()V' bytes='1' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String toCharArray ()[C' bytes='25' count='15' iicount='15' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/nio/charset/CharsetEncoder maxBytesPerChar ()F' bytes='5' count='55' iicount='55' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/nio/cs/UTF_8$Encoder encode ([CII[B)I' bytes='359' count='55' backedge_count='3828' iicount='55' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Arrays copyOf ([BI)[B' bytes='19' count='59' iicount='59' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntry (J[BZ)J' bytes='0' count='0' iicount='0' stamp='0.080'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getZipEntry (Ljava/lang/String;J)Ljava/util/zip/ZipEntry;' bytes='236' count='0' iicount='0' stamp='0.081'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipEntry &lt;init&gt; ()V' bytes='43' count='0' iicount='0' stamp='0.081'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntryFlag (J)I' bytes='0' count='0' iicount='0' stamp='0.081'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntryTime (J)J' bytes='0' count='0' iicount='0' stamp='0.081'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntryCrc (J)J' bytes='0' count='0' iicount='0' stamp='0.081'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntrySize (J)J' bytes='0' count='0' iicount='0' stamp='0.081'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntryCSize (J)J' bytes='0' count='0' iicount='0' stamp='0.082'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntryMethod (J)I' bytes='0' count='0' iicount='0' stamp='0.082'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getEntryBytes (JI)[B' bytes='0' count='0' iicount='0' stamp='0.082'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipEntry setExtra0 ([BZ)V' bytes='360' count='0' iicount='0' stamp='0.082'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile freeEntry (JJ)V' bytes='0' count='0' iicount='0' stamp='0.082'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile$JarFileEntry &lt;init&gt; (Ljava/util/jar/JarFile;Ljava/util/zip/ZipEntry;)V' bytes='11' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarEntry &lt;init&gt; (Ljava/util/zip/ZipEntry;)V' bytes='6' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipEntry &lt;init&gt; (Ljava/util/zip/ZipEntry;)V' bytes='146' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Objects requireNonNull (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;' bytes='15' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile getInputStream (Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;' bytes='89' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile maybeInstantiateVerifier ()V' bytes='96' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/jar/JarFile getMetaInfEntryNames ()[Ljava/lang/String;' bytes='0' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String toUpperCase (Ljava/util/Locale;)Ljava/lang/String;' bytes='439' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Character toUpperCaseEx (I)I' bytes='30' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/CharacterDataLatin1 toUpperCaseEx (I)I' bytes='71' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getInputStream (Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;' bytes='304' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipCoder isUTF8 ()Z' bytes='5' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile$ZipFileInputStream &lt;init&gt; (Ljava/util/zip/ZipFile;J)V' bytes='41' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/InputStream &lt;init&gt; ()V' bytes='5' count='3' iicount='3' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile access$1100 (J)J' bytes='5' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile access$1200 (J)J' bytes='5' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile getInflater ()Ljava/util/zip/Inflater;' bytes='56' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayDeque poll ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayDeque pollFirst ()Ljava/lang/Object;' bytes='42' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater &lt;clinit&gt; ()V' bytes='26' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater initIDs ()V' bytes='0' count='0' iicount='0' stamp='0.083'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater &lt;init&gt; (Z)V' bytes='27' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater init (Z)J' bytes='0' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZStreamRef &lt;init&gt; (J)V' bytes='10' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile$ZipFileInflaterInputStream &lt;init&gt; (Ljava/util/zip/ZipFile;Ljava/util/zip/ZipFile$ZipFileInputStream;Ljava/util/zip/Inflater;I)V' bytes='29' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/InflaterInputStream &lt;init&gt; (Ljava/io/InputStream;Ljava/util/zip/Inflater;I)V' bytes='79' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilterInputStream &lt;init&gt; (Ljava/io/InputStream;)V' bytes='10' count='1' iicount='1' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/WeakHashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' bytes='162' count='5' backedge_count='2' iicount='5' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex &lt;init&gt; (Ljava/io/InputStream;)V' bytes='10' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex &lt;init&gt; ()V' bytes='27' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashMap &lt;init&gt; ()V' bytes='11' count='11' iicount='11' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex read (Ljava/io/InputStream;)V' bytes='130' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/InputStreamReader &lt;init&gt; (Ljava/io/InputStream;Ljava/lang/String;)V' bytes='30' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/BufferedReader &lt;init&gt; (Ljava/io/Reader;)V' bytes='9' count='1' iicount='1' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Vector &lt;init&gt; ()V' bytes='7' count='10' iicount='10' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/BufferedReader readLine ()Ljava/lang/String;' bytes='6' count='64' iicount='64' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/InflaterInputStream ensureOpen ()V' bytes='18' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater inflate ([BII)I' bytes='113' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater ensureOpen ()V' bytes='47' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZStreamRef address ()J' bytes='5' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater inflateBytes (J[BII)I' bytes='0' count='0' iicount='0' stamp='0.084'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater finished ()Z' bytes='19' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater needsDictionary ()Z' bytes='19' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater needsInput ()Z' bytes='27' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile$ZipFileInflaterInputStream fill ()V' bytes='80' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile$ZipFileInputStream read ([BII)I' bytes='131' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile access$1300 (Ljava/util/zip/ZipFile;)V' bytes='5' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile ensureOpenOrZipException ()V' bytes='18' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile access$400 (Ljava/util/zip/ZipFile;)J' bytes='5' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile access$1400 (JJJ[BII)I' bytes='14' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile read (JJJ[BII)I' bytes='0' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile$ZipFileInputStream close ()V' bytes='110' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile access$1000 (JJ)V' bytes='6' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile access$000 (Ljava/util/zip/ZipFile;)Ljava/util/Map;' bytes='5' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/WeakHashMap remove (Ljava/lang/Object;)Ljava/lang/Object;' bytes='133' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater setInput ([BII)V' bytes='74' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/ZipFile$ZipFileInputStream size ()J' bytes='5' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/zip/Inflater getBytesWritten ()J' bytes='23' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Vector add (Ljava/lang/Object;)Z' bytes='39' count='11' iicount='11' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex addMapping (Ljava/lang/String;Ljava/lang/String;)V' bytes='21' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex addToList (Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)V' bytes='59' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/LinkedList &lt;init&gt; ()V' bytes='10' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/AbstractSequentialList &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/AbstractList &lt;init&gt; ()V' bytes='10' count='18' iicount='18' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/LinkedList add (Ljava/lang/Object;)Z' bytes='7' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/LinkedList linkLast (Ljava/lang/Object;)V' bytes='59' count='0' iicount='0' stamp='0.085'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/LinkedList$Node &lt;init&gt; (Ljava/util/LinkedList$Node;Ljava/lang/Object;Ljava/util/LinkedList$Node;)V' bytes='20' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/LinkedList contains (Ljava/lang/Object;)Z' bytes='15' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/LinkedList indexOf (Ljava/lang/Object;)I' bytes='73' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Vector size ()I' bytes='5' count='61' iicount='61' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Vector toArray ([Ljava/lang/Object;)[Ljava/lang/Object;' bytes='60' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$802 (Lsun/misc/URLClassPath$JarLoader;Lsun/misc/JarIndex;)Lsun/misc/JarIndex;' bytes='7' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$800 (Lsun/misc/URLClassPath$JarLoader;)Lsun/misc/JarIndex;' bytes='5' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex getJarFiles ()[Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL &lt;init&gt; (Ljava/net/URL;Ljava/lang/String;)V' bytes='8' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL &lt;init&gt; (Ljava/net/URL;Ljava/lang/String;Ljava/net/URLStreamHandler;)V' bytes='543' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String regionMatches (ZILjava/lang/String;II)Z' bytes='149' count='5' backedge_count='50' iicount='5' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Character toUpperCase (C)C' bytes='6' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Character toUpperCase (I)I' bytes='9' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/CharacterDataLatin1 toUpperCase (I)I' bytes='53' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/protocol/file/Handler parseURL (Ljava/net/URL;Ljava/lang/String;II)V' bytes='18' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLStreamHandler parseURL (Ljava/net/URL;Ljava/lang/String;II)V' bytes='1158' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL getUserInfo ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String substring (II)Ljava/lang/String;' bytes='79' count='30' iicount='30' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String indexOf (Ljava/lang/String;)I' bytes='7' count='4' iicount='4' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String indexOf (Ljava/lang/String;I)I' bytes='25' count='17' iicount='17' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLStreamHandler setURL (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V' bytes='40' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL set (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V' bytes='114' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader access$1000 (Lsun/misc/URLClassPath$JarLoader;)Ljava/util/HashMap;' bytes='5' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashMap afterNodeAccess (Ljava/util/HashMap$Node;)V' bytes='1' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashSet &lt;init&gt; ()V' bytes='16' count='2' iicount='2' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$JarLoader getResource (Ljava/lang/String;ZLjava/util/Set;)Lsun/misc/Resource;' bytes='349' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/JarIndex get (Ljava/lang/String;)Ljava/util/LinkedList;' bytes='49' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String lastIndexOf (Ljava/lang/String;)I' bytes='11' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String lastIndexOf (Ljava/lang/String;I)I' bytes='25' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/String lastIndexOf ([CII[CIII)I' bytes='151' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassNotFoundException &lt;init&gt; (Ljava/lang/String;)V' bytes='7' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ReflectiveOperationException &lt;init&gt; (Ljava/lang/String;Ljava/lang/Throwable;)V' bytes='7' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Exception &lt;init&gt; (Ljava/lang/String;Ljava/lang/Throwable;)V' bytes='7' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Throwable &lt;init&gt; (Ljava/lang/String;Ljava/lang/Throwable;)V' bytes='39' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$FileLoader &lt;init&gt; (Ljava/net/URL;)V' bytes='61' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/UnixFileSystem normalize (Ljava/lang/String;II)Ljava/lang/String;' bytes='132' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File getCanonicalFile ()Ljava/io/File;' bytes='21' count='13' iicount='13' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$Loader getBaseURL ()Ljava/net/URL;' bytes='5' count='0' iicount='0' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/ParseUtil encodePath (Ljava/lang/String;Z)Ljava/lang/String;' bytes='336' count='12' backedge_count='978' iicount='12' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File &lt;init&gt; (Ljava/io/File;Ljava/lang/String;)V' bytes='113' count='27' iicount='27' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ref/Reference get ()Ljava/lang/Object;' bytes='5' count='256' iicount='256' stamp='0.086'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$FileLoader$1 &lt;init&gt; (Lsun/misc/URLClassPath$FileLoader;Ljava/lang/String;Ljava/net/URL;Ljava/io/File;)V' bytes='26' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Resource &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader access$100 (Ljava/net/URLClassLoader;Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;' bytes='7' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader defineClass (Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;' bytes='142' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$FileLoader$1 getCodeSourceURL ()Ljava/net/URL;' bytes='8' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Resource getManifest ()Ljava/util/jar/Manifest;' bytes='2' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader definePackageInternal (Ljava/lang/String;Ljava/util/jar/Manifest;Ljava/net/URL;)V' bytes='81' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader getAndVerifyPackage (Ljava/lang/String;Ljava/util/jar/Manifest;Ljava/net/URL;)Ljava/lang/Package;' bytes='109' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader getPackage (Ljava/lang/String;)Ljava/lang/Package;' bytes='118' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Package &lt;clinit&gt; ()V' bytes='37' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashMap &lt;init&gt; (I)V' bytes='8' count='2' iicount='2' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Package getSystemPackage (Ljava/lang/String;)Ljava/lang/Package;' bytes='63' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Package getSystemPackage0 (Ljava/lang/String;)Ljava/lang/String;' bytes='0' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader definePackage (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)Ljava/lang/Package;' bytes='77' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Package &lt;init&gt; (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/lang/ClassLoader;)V' bytes='56' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Resource getByteBuffer ()Ljava/nio/ByteBuffer;' bytes='24' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Resource cachedInputStream ()Ljava/io/InputStream;' bytes='20' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$FileLoader$1 getInputStream ()Ljava/io/InputStream;' bytes='12' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileInputStream &lt;init&gt; (Ljava/io/File;)V' bytes='110' count='1' iicount='1' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Resource getBytes ()[B' bytes='242' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Thread interrupted ()Z' bytes='8' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Thread isInterrupted (Z)Z' bytes='0' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/URLClassPath$FileLoader$1 getContentLength ()I' bytes='9' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/File length ()J' bytes='33' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/UnixFileSystem getLength (Ljava/io/File;)J' bytes='0' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileInputStream read ([BII)I' bytes='8' count='2' iicount='2' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FileInputStream close ()V' bytes='62' count='1' iicount='1' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Resource getCodeSigners ()[Ljava/security/CodeSigner;' bytes='2' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/CodeSource &lt;init&gt; (Ljava/net/URL;[Ljava/security/CodeSigner;)V' bytes='40' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter getReadClassBytesTime ()Lsun/misc/PerfCounter;' bytes='4' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/SecureClassLoader defineClass (Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;' bytes='16' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/SecureClassLoader getProtectionDomain (Ljava/security/CodeSource;)Ljava/security/ProtectionDomain;' bytes='114' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL hashCode ()I' bytes='30' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLStreamHandler hashCode (Ljava/net/URL;)I' bytes='128' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLStreamHandler getHostAddress (Ljava/net/URL;)Ljava/net/InetAddress;' bytes='54' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/Launcher$AppClassLoader getPermissions (Ljava/security/CodeSource;)Ljava/security/PermissionCollection;' bytes='21' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLClassLoader getPermissions (Ljava/security/CodeSource;)Ljava/security/PermissionCollection;' bytes='287' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/SecureClassLoader getPermissions (Ljava/security/CodeSource;)Ljava/security/PermissionCollection;' bytes='12' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/SecureClassLoader check ()V' bytes='18' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/Permissions &lt;clinit&gt; ()V' bytes='36' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/Permissions &lt;init&gt; ()V' bytes='28' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/PermissionCollection &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/CodeSource getLocation ()Ljava/net/URL;' bytes='5' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URL openConnection ()Ljava/net/URLConnection;' bytes='9' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/protocol/file/Handler openConnection (Ljava/net/URL;)Ljava/net/URLConnection;' bytes='7' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/protocol/file/Handler openConnection (Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/URLConnection;' bytes='194' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/protocol/file/Handler createFileURLConnection (Ljava/net/URL;Ljava/io/File;)Ljava/net/URLConnection;' bytes='10' count='0' iicount='0' stamp='0.087'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLConnection &lt;clinit&gt; ()V' bytes='23' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Hashtable &lt;init&gt; ()V' bytes='9' count='3' iicount='3' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/URLConnection &lt;clinit&gt; ()V' bytes='11' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/protocol/file/FileURLConnection &lt;clinit&gt; ()V' bytes='21' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/protocol/file/FileURLConnection &lt;init&gt; (Ljava/net/URL;Ljava/io/File;)V' bytes='38' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/URLConnection &lt;init&gt; (Ljava/net/URL;)V' bytes='22' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/net/URLConnection &lt;init&gt; (Ljava/net/URL;)V' bytes='44' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/MessageHeader &lt;init&gt; ()V' bytes='9' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/MessageHeader grow ()V' bytes='92' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/net/www/protocol/file/FileURLConnection getPermission ()Ljava/security/Permission;' bytes='70' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission &lt;init&gt; (Ljava/lang/String;Ljava/lang/String;)V' bytes='14' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/Permission &lt;init&gt; (Ljava/lang/String;)V' bytes='10' count='3' iicount='3' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission getMask (Ljava/lang/String;)I' bytes='948' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission init (I)V' bytes='228' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/Permission getName ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission$1 &lt;init&gt; (Ljava/io/FilePermission;)V' bytes='10' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission$1 run ()Ljava/lang/Object;' bytes='5' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission$1 run ()Ljava/lang/String;' bytes='116' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission access$000 (Ljava/io/FilePermission;)Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/Permissions add (Ljava/security/Permission;)V' bytes='70' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/PermissionCollection isReadOnly ()Z' bytes='5' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/Permissions getPermissionCollection (Ljava/security/Permission;Z)Ljava/security/PermissionCollection;' bytes='107' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermission newPermissionCollection ()Ljava/security/PermissionCollection;' bytes='8' count='0' iicount='0' stamp='0.088'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermissionCollection &lt;clinit&gt; ()V' bytes='22' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermissionCollection &lt;init&gt; ()V' bytes='16' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayList &lt;init&gt; ()V' bytes='12' count='5' iicount='5' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/io/FilePermissionCollection add (Ljava/security/Permission;)V' bytes='77' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/ArrayList add (Ljava/lang/Object;)Z' bytes='29' count='73' iicount='73' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/RuntimePermission &lt;init&gt; (Ljava/lang/String;)V' bytes='6' count='2' iicount='2' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/BasicPermissionCollection &lt;clinit&gt; ()V' bytes='51' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/BasicPermissionCollection &lt;init&gt; (Ljava/lang/Class;)V' bytes='28' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/BasicPermission getCanonicalName ()Ljava/lang/String;' bytes='17' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/ProtectionDomain &lt;init&gt; (Ljava/security/CodeSource;Ljava/security/PermissionCollection;Ljava/lang/ClassLoader;[Ljava/security/Principal;)V' bytes='99' count='2' iicount='2' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/PermissionCollection setReadOnly ()V' bytes='6' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader defineClass (Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' bytes='43' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader preDefineClass (Ljava/lang/String;Ljava/security/ProtectionDomain;)Ljava/security/ProtectionDomain;' bytes='109' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/ProtectionDomain getCodeSource ()Ljava/security/CodeSource;' bytes='5' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader checkCerts (Ljava/lang/String;Ljava/security/CodeSource;)V' bytes='195' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/security/CodeSource getCertificates ()[Ljava/security/cert/Certificate;' bytes='98' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader defineClassSourceLocation (Ljava/security/ProtectionDomain;)Ljava/lang/String;' bytes='28' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader defineClass1 (Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class;' bytes='0' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader checkPackageAccess (Ljava/lang/Class;Ljava/security/ProtectionDomain;)V' bytes='122' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/Collections$SynchronizedCollection add (Ljava/lang/Object;)Z' bytes='25' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/util/HashSet add (Ljava/lang/Object;)Z' bytes='20' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader addClass (Ljava/lang/Class;)V' bytes='9' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ClassLoader postDefineClass (Ljava/lang/Class;Ljava/security/ProtectionDomain;)V' bytes='26' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter getParentDelegationTime ()Lsun/misc/PerfCounter;' bytes='4' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter addTime (J)V' bytes='6' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter getFindClassTime ()Lsun/misc/PerfCounter;' bytes='4' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/misc/PerfCounter getFindClasses ()Lsun/misc/PerfCounter;' bytes='4' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Object equals (Ljava/lang/Object;)Z' bytes='11' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper$FXHelper &lt;clinit&gt; ()V' bytes='17' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper$FXHelper access$100 (Ljava/lang/Class;)Z' bytes='5' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper$FXHelper doesExtendFXApplication (Ljava/lang/Class;)Z' bytes='33' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getSuperclass ()Ljava/lang/Class;' bytes='0' count='29' iicount='29' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper validateMainClass (Ljava/lang/Class;)V' bytes='111' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;' bytes='64' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getMethod0 (Ljava/lang/String;[Ljava/lang/Class;Z)Ljava/lang/reflect/Method;' bytes='40' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class$MethodArray &lt;init&gt; (I)V' bytes='38' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class privateGetMethodRecursive (Ljava/lang/String;[Ljava/lang/Class;ZLjava/lang/Class$MethodArray;)Ljava/lang/reflect/Method;' bytes='130' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class privateGetDeclaredMethods (Z)[Ljava/lang/reflect/Method;' bytes='67' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getDeclaredMethods0 (Z)[Ljava/lang/reflect/Method;' bytes='0' count='0' iicount='0' stamp='0.089'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/reflect/Reflection filterMethods (Ljava/lang/Class;[Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Method;' bytes='31' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class searchMethods ([Ljava/lang/reflect/Method;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;' bytes='90' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Method getName ()Ljava/lang/String;' bytes='5' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Method getParameterTypes ()[Ljava/lang/Class;' bytes='11' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Object clone ()Ljava/lang/Object;' bytes='0' count='7' iicount='7' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/reflect/ReflectionFactory copyMethod (Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;' bytes='10' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/ReflectAccess copyMethod (Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;' bytes='5' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Method copy ()Ljava/lang/reflect/Method;' bytes='84' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Method &lt;init&gt; (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;IILjava/lang/String;[B[B[B)V' bytes='68' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Executable &lt;init&gt; ()V' bytes='5' count='7' iicount='7' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Method getModifiers ()I' bytes='5' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Modifier isStatic (I)Z' bytes='13' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/reflect/Method getReturnType ()Ljava/lang/Class;' bytes='5' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Void &lt;clinit&gt; ()V' bytes='9' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='sun/launcher/LauncherHelper getApplicationClass ()Ljava/lang/Class;' bytes='4' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getCanonicalName ()Ljava/lang/String;' bytes='102' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class isArray ()Z' bytes='0' count='29' iicount='29' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class isLocalOrAnonymousClass ()Z' bytes='13' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getEnclosingMethodInfo ()Ljava/lang/Class$EnclosingMethodInfo;' bytes='21' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getEnclosingMethod0 ()[Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getEnclosingClass ()Ljava/lang/Class;' bytes='60' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getDeclaringClass ()Ljava/lang/Class;' bytes='22' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Class getDeclaringClass0 ()Ljava/lang/Class;' bytes='0' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='concurrent/Bar main ([Ljava/lang/String;)V' bytes='11' count='0' iicount='0' stamp='0.090'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='concurrent/Bar &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.090'/>
+<task_queued compile_id='1' method='concurrent/Bar sum ()V' bytes='11' count='0' iicount='0' level='3' blocking='1' stamp='0.090' comment='must_be_compiled'/>
+<writer thread='20483'/>
+Loaded disassembler from /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/server/hsdis-amd64.dylib
+Decoding compiled method 0x0000000114435b10:
+Code:
+[Disassembling for mach=&apos;i386:x86-64&apos;]
+[Entry Point]
+[Constants]
+  # {method} {0x000000010e908258} &apos;sum&apos; &apos;()V&apos; in &apos;concurrent/Bar&apos;
+  #           [sp+0x40]  (sp of caller)
+  0x0000000114435c80: mov    0x8(%rsi),%r10d
+  0x0000000114435c84: shl    $0x3,%r10
+  0x0000000114435c88: cmp    %rax,%r10
+  0x0000000114435c8b: jne    0x000000011437ae20  ;   {runtime_call}
+  0x0000000114435c91: data32 data32 nopw 0x0(%rax,%rax,1)
+  0x0000000114435c9c: data32 data32 xchg %ax,%ax
+[Verified Entry Point]
+  0x0000000114435ca0: mov    %eax,-0x14000(%rsp)
+  0x0000000114435ca7: push   %rbp
+  0x0000000114435ca8: sub    $0x30,%rsp
+  0x0000000114435cac: movabs $0x10e908438,%rdx  ;   {metadata(method data for {method} {0x000000010e908258} &apos;sum&apos; &apos;()V&apos; in &apos;concurrent/Bar&apos;)}
+  0x0000000114435cb6: mov    0xdc(%rdx),%edi
+  0x0000000114435cbc: add    $0x8,%edi
+  0x0000000114435cbf: mov    %edi,0xdc(%rdx)
+  0x0000000114435cc5: movabs $0x10e908258,%rdx  ;   {metadata({method} {0x000000010e908258} &apos;sum&apos; &apos;()V&apos; in &apos;concurrent/Bar&apos;)}
+  0x0000000114435ccf: and    $0x0,%edi
+  0x0000000114435cd2: cmp    $0x0,%edi
+  0x0000000114435cd5: je     0x0000000114435d79
+  0x0000000114435cdb: movabs $0x7c0000f28,%rdx  ;   {metadata(&apos;java/lang/Object&apos;)}
+  0x0000000114435ce5: mov    0x60(%r15),%rax
+  0x0000000114435ce9: lea    0x10(%rax),%rdi
+  0x0000000114435ced: cmp    0x70(%r15),%rdi
+  0x0000000114435cf1: ja     0x0000000114435d90
+  0x0000000114435cf7: mov    %rdi,0x60(%r15)
+  0x0000000114435cfb: mov    0xa8(%rdx),%rcx
+  0x0000000114435d02: mov    %rcx,(%rax)
+  0x0000000114435d05: mov    %rdx,%rcx
+  0x0000000114435d08: shr    $0x3,%rcx
+  0x0000000114435d0c: mov    %ecx,0x8(%rax)
+  0x0000000114435d0f: xor    %rcx,%rcx
+  0x0000000114435d12: mov    %ecx,0xc(%rax)
+  0x0000000114435d15: xor    %rcx,%rcx          ;*new  ; - concurrent.Bar::sum@0 (line 9)
+
+  0x0000000114435d18: mov    %rax,%rsi
+  0x0000000114435d1b: movabs $0x10e908438,%rdi  ;   {metadata(method data for {method} {0x000000010e908258} &apos;sum&apos; &apos;()V&apos; in &apos;concurrent/Bar&apos;)}
+  0x0000000114435d25: addq   $0x1,0x108(%rdi)
+  0x0000000114435d2d: mov    %rax,%rsi          ;*invokespecial &lt;init&gt;
+                                                ; - concurrent.Bar::sum@4 (line 9)
+
+  0x0000000114435d30: mov    %rax,0x20(%rsp)
+  0x0000000114435d35: nop
+  0x0000000114435d36: nop
+  0x0000000114435d37: callq  0x000000011437b020  ; OopMap{[32]=Oop off=188}
+                                                ;*invokespecial &lt;init&gt;
+                                                ; - concurrent.Bar::sum@4 (line 9)
+                                                ;   {optimized virtual_call}
+  0x0000000114435d3c: movabs $0x76ab713f0,%rsi  ;   {oop(a &apos;java/lang/Class&apos; = &apos;concurrent/Bar&apos;)}
+  0x0000000114435d46: mov    0x20(%rsp),%rax
+  0x0000000114435d4b: mov    %rax,%r10
+  0x0000000114435d4e: shr    $0x3,%r10
+  0x0000000114435d52: mov    %r10d,0x68(%rsi)
+  0x0000000114435d56: shr    $0x9,%rsi
+  0x0000000114435d5a: movabs $0x109961000,%rdi
+  0x0000000114435d64: movb   $0x0,(%rsi,%rdi,1)
+  0x0000000114435d68: lock addl $0x0,(%rsp)     ;*putstatic a
+                                                ; - concurrent.Bar::sum@7 (line 9)
+
+  0x0000000114435d6d: add    $0x30,%rsp
+  0x0000000114435d71: pop    %rbp
+  0x0000000114435d72: test   %eax,-0x98b0c78(%rip)        # 0x000000010ab85100
+                                                ;   {poll_return}
+  0x0000000114435d78: retq   
+  0x0000000114435d79: mov    %rdx,0x8(%rsp)
+  0x0000000114435d7e: movq   $0xffffffffffffffff,(%rsp)
+  0x0000000114435d86: callq  0x0000000114432f60  ; OopMap{rsi=Oop off=267}
+                                                ;*synchronization entry
+                                                ; - concurrent.Bar::sum@-1 (line 9)
+                                                ;   {runtime_call}
+  0x0000000114435d8b: jmpq   0x0000000114435cdb
+  0x0000000114435d90: mov    %rdx,%rdx
+  0x0000000114435d93: callq  0x000000011442f1a0  ; OopMap{off=280}
+                                                ;*new  ; - concurrent.Bar::sum@0 (line 9)
+                                                ;   {runtime_call}
+  0x0000000114435d98: jmpq   0x0000000114435d18
+  0x0000000114435d9d: nop
+  0x0000000114435d9e: nop
+  0x0000000114435d9f: mov    0x2a8(%r15),%rax
+  0x0000000114435da6: movabs $0x0,%r10
+  0x0000000114435db0: mov    %r10,0x2a8(%r15)
+  0x0000000114435db7: movabs $0x0,%r10
+  0x0000000114435dc1: mov    %r10,0x2b0(%r15)
+  0x0000000114435dc8: add    $0x30,%rsp
+  0x0000000114435dcc: pop    %rbp
+  0x0000000114435dcd: jmpq   0x00000001143a14a0  ;   {runtime_call}
+  0x0000000114435dd2: hlt    
+  0x0000000114435dd3: hlt    
+  0x0000000114435dd4: hlt    
+  0x0000000114435dd5: hlt    
+  0x0000000114435dd6: hlt    
+  0x0000000114435dd7: hlt    
+  0x0000000114435dd8: hlt    
+  0x0000000114435dd9: hlt    
+  0x0000000114435dda: hlt    
+  0x0000000114435ddb: hlt    
+  0x0000000114435ddc: hlt    
+  0x0000000114435ddd: hlt    
+  0x0000000114435dde: hlt    
+  0x0000000114435ddf: hlt    
+[Stub Code]
+  0x0000000114435de0: nop                       ;   {no_reloc}
+  0x0000000114435de1: nop
+  0x0000000114435de2: nop
+  0x0000000114435de3: nop
+  0x0000000114435de4: nop
+  0x0000000114435de5: movabs $0x0,%rbx          ;   {static_stub}
+  0x0000000114435def: jmpq   0x0000000114435def  ;   {runtime_call}
+[Exception Handler]
+  0x0000000114435df4: callq  0x00000001144308e0  ;   {runtime_call}
+  0x0000000114435df9: mov    %rsp,-0x28(%rsp)
+  0x0000000114435dfe: sub    $0x80,%rsp
+  0x0000000114435e05: mov    %rax,0x78(%rsp)
+  0x0000000114435e0a: mov    %rcx,0x70(%rsp)
+  0x0000000114435e0f: mov    %rdx,0x68(%rsp)
+  0x0000000114435e14: mov    %rbx,0x60(%rsp)
+  0x0000000114435e19: mov    %rbp,0x50(%rsp)
+  0x0000000114435e1e: mov    %rsi,0x48(%rsp)
+  0x0000000114435e23: mov    %rdi,0x40(%rsp)
+  0x0000000114435e28: mov    %r8,0x38(%rsp)
+  0x0000000114435e2d: mov    %r9,0x30(%rsp)
+  0x0000000114435e32: mov    %r10,0x28(%rsp)
+  0x0000000114435e37: mov    %r11,0x20(%rsp)
+  0x0000000114435e3c: mov    %r12,0x18(%rsp)
+  0x0000000114435e41: mov    %r13,0x10(%rsp)
+  0x0000000114435e46: mov    %r14,0x8(%rsp)
+  0x0000000114435e4b: mov    %r15,(%rsp)
+  0x0000000114435e4f: movabs $0x10c1d7296,%rdi  ;   {external_word}
+  0x0000000114435e59: movabs $0x114435df9,%rsi  ;   {internal_word}
+  0x0000000114435e63: mov    %rsp,%rdx
+  0x0000000114435e66: and    $0xfffffffffffffff0,%rsp
+  0x0000000114435e6a: callq  0x000000010c0029d2  ;   {runtime_call}
+  0x0000000114435e6f: hlt    
+[Deopt Handler Code]
+  0x0000000114435e70: movabs $0x114435e70,%r10  ;   {section_word}
+  0x0000000114435e7a: push   %r10
+  0x0000000114435e7c: jmpq   0x000000011437c3c0  ;   {runtime_call}
+  0x0000000114435e81: hlt    
+  0x0000000114435e82: hlt    
+  0x0000000114435e83: hlt    
+  0x0000000114435e84: hlt    
+  0x0000000114435e85: hlt    
+  0x0000000114435e86: hlt    
+  0x0000000114435e87: hlt    
+<nmethod compile_id='1' compiler='C1' level='3' entry='0x0000000114435c80' size='1088' address='0x0000000114435b10' relocation_offset='296' insts_offset='368' stub_offset='720' scopes_data_offset='904' scopes_pcs_offset='952' dependencies_offset='1080' oops_offset='888' method='concurrent/Bar sum ()V' bytes='11' count='0' iicount='0' stamp='0.095'/>
+<writer thread='6915'/>
+<task_queued compile_id='2' method='concurrent/Bar sum ()V' bytes='11' count='1' iicount='1' blocking='1' stamp='0.096' comment='tiered' hot_count='1'/>
+<writer thread='18947'/>
+Decoding compiled method 0x0000000114435790:
+Code:
+[Entry Point]
+[Constants]
+  # {method} {0x000000010e908258} &apos;sum&apos; &apos;()V&apos; in &apos;concurrent/Bar&apos;
+  #           [sp+0x20]  (sp of caller)
+  0x00000001144358e0: mov    0x8(%rsi),%r10d
+  0x00000001144358e4: shl    $0x3,%r10
+  0x00000001144358e8: cmp    %r10,%rax
+  0x00000001144358eb: jne    0x000000011437ae20  ;   {runtime_call}
+  0x00000001144358f1: data32 xchg %ax,%ax
+  0x00000001144358f4: nopl   0x0(%rax,%rax,1)
+  0x00000001144358fc: data32 data32 xchg %ax,%ax
+[Verified Entry Point]
+  0x0000000114435900: mov    %eax,-0x14000(%rsp)
+  0x0000000114435907: push   %rbp
+  0x0000000114435908: sub    $0x10,%rsp         ;*synchronization entry
+                                                ; - concurrent.Bar::sum@-1 (line 9)
+
+  0x000000011443590c: mov    0x60(%r15),%rax
+  0x0000000114435910: mov    %rax,%r10
+  0x0000000114435913: add    $0x10,%r10
+  0x0000000114435917: cmp    0x70(%r15),%r10
+  0x000000011443591b: jae    0x000000011443599b
+  0x000000011443591d: mov    %r10,0x60(%r15)
+  0x0000000114435921: prefetchnta 0xc0(%r10)
+  0x0000000114435929: mov    $0xf80001e5,%r11d  ;   {metadata(&apos;java/lang/Object&apos;)}
+  0x000000011443592f: movabs $0x0,%r10
+  0x0000000114435939: lea    (%r10,%r11,8),%r10
+  0x000000011443593d: mov    0xa8(%r10),%r10
+  0x0000000114435944: mov    %r10,(%rax)
+  0x0000000114435947: movl   $0xf80001e5,0x8(%rax)  ;   {metadata(&apos;java/lang/Object&apos;)}
+  0x000000011443594e: mov    %r12d,0xc(%rax)
+  0x0000000114435952: mov    %rax,%rbp          ;*new  ; - concurrent.Bar::sum@0 (line 9)
+
+  0x0000000114435955: mov    %rbp,%rsi
+  0x0000000114435958: data32 xchg %ax,%ax
+  0x000000011443595b: callq  0x000000011437b020  ; OopMap{rbp=Oop off=128}
+                                                ;*invokespecial &lt;init&gt;
+                                                ; - concurrent.Bar::sum@4 (line 9)
+                                                ;   {optimized virtual_call}
+  0x0000000114435960: mov    %rbp,%r11
+  0x0000000114435963: shr    $0x3,%r11
+  0x0000000114435967: movabs $0x109961000,%r10
+  0x0000000114435971: movabs $0x76ab713f0,%r8   ;   {oop(a &apos;java/lang/Class&apos; = &apos;concurrent/Bar&apos;)}
+  0x000000011443597b: mov    %r11d,0x68(%r8)
+  0x000000011443597f: mov    %r8,%r11
+  0x0000000114435982: shr    $0x9,%r11
+  0x0000000114435986: mov    %r12b,(%r10,%r11,1)
+  0x000000011443598a: lock addl $0x0,(%rsp)     ;*putstatic a
+                                                ; - concurrent.Bar::sum@7 (line 9)
+
+  0x000000011443598f: add    $0x10,%rsp
+  0x0000000114435993: pop    %rbp
+  0x0000000114435994: test   %eax,-0x98b099a(%rip)        # 0x000000010ab85000
+                                                ;   {poll_return}
+  0x000000011443599a: retq   
+  0x000000011443599b: movabs $0x7c0000f28,%rsi  ;   {metadata(&apos;java/lang/Object&apos;)}
+  0x00000001144359a5: xchg   %ax,%ax
+  0x00000001144359a7: callq  0x0000000114436de0  ; OopMap{off=204}
+                                                ;*new  ; - concurrent.Bar::sum@0 (line 9)
+                                                ;   {runtime_call}
+  0x00000001144359ac: jmp    0x0000000114435952
+  0x00000001144359ae: mov    %rax,%rsi
+  0x00000001144359b1: jmp    0x00000001144359b6
+  0x00000001144359b3: mov    %rax,%rsi          ;*new  ; - concurrent.Bar::sum@0 (line 9)
+
+  0x00000001144359b6: add    $0x10,%rsp
+  0x00000001144359ba: pop    %rbp
+  0x00000001144359bb: jmpq   0x0000000114434c20  ;   {runtime_call}
+[Stub Code]
+  0x00000001144359c0: movabs $0x0,%rbx          ;   {no_reloc}
+  0x00000001144359ca: jmpq   0x00000001144359ca  ;   {runtime_call}
+[Exception Handler]
+  0x00000001144359cf: jmpq   0x00000001143a1760  ;   {runtime_call}
+[Deopt Handler Code]
+  0x00000001144359d4: callq  0x00000001144359d9
+  0x00000001144359d9: subq   $0x5,(%rsp)
+  0x00000001144359de: jmpq   0x000000011437c3c0  ;   {runtime_call}
+  0x00000001144359e3: hlt    
+  0x00000001144359e4: hlt    
+  0x00000001144359e5: hlt    
+  0x00000001144359e6: hlt    
+  0x00000001144359e7: hlt    
+<nmethod compile_id='2' compiler='C2' level='4' entry='0x00000001144358e0' size='848' address='0x0000000114435790' relocation_offset='296' insts_offset='336' stub_offset='560' scopes_data_offset='624' scopes_pcs_offset='664' dependencies_offset='792' handler_table_offset='800' oops_offset='600' method='concurrent/Bar sum ()V' bytes='11' count='1' iicount='1' stamp='0.098'/>
+<make_not_entrant thread='18947' compile_id='1' compiler='C1' level='3' stamp='0.098'/>
+<writer thread='6915'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Thread exit ()V' bytes='51' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ThreadGroup threadTerminated (Ljava/lang/Thread;)V' bytes='63' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ThreadGroup remove (Ljava/lang/Thread;)V' bytes='94' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Object notifyAll ()V' bytes='0' count='1' iicount='1' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/ThreadGroup add (Ljava/lang/Thread;)V' bytes='110' count='4' iicount='4' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Shutdown &lt;clinit&gt; ()V' bytes='43' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Shutdown$Lock &lt;init&gt; (Ljava/lang/Shutdown$1;)V' bytes='5' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Shutdown$Lock &lt;init&gt; ()V' bytes='5' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Shutdown shutdown ()V' bytes='72' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Shutdown sequence ()V' bytes='61' count='0' iicount='0' stamp='0.098'/>
+<make_not_compilable thread='6915' osr='0' level='-1' reason='excluded by CompilerOracle' method='java/lang/Shutdown runHooks ()V' bytes='69' count='0' iicount='0' stamp='0.098'/>
+<writer thread='14083'/>
+<destroy_vm stamp='0.098'/>
+<tty_done stamp='0.099'/>
+</tty>
+<compilation_log thread='19459'>
+<fragment>
+<![CDATA[
+<start_compile_thread name='C2 CompilerThread1' thread='19459' process='37365' stamp='0.068'/>
+]]>
+</fragment>
+</compilation_log>
+<compilation_log thread='20483'>
+<start_compile_thread name='C1 CompilerThread3' thread='20483' process='37365' stamp='0.068'/>
+<task compile_id='1' method='concurrent/Bar sum ()V' bytes='11' count='0' iicount='0' level='3' blocking='1' stamp='0.090'>
+<phase name='buildIR' stamp='0.090'>
+<type id='723' name='void'/>
+<klass id='831' name='concurrent/Bar' flags='1'/>
+<method id='832' holder='831' name='sum' return='723' flags='0' bytes='11' iicount='1'/>
+<parse method='832'  stamp='0.090'>
+<bc code='183' bci='4'/>
+<klass id='728' name='java/lang/Object' flags='1'/>
+<method id='834' holder='728' name='&lt;init&gt;' return='723' flags='1' bytes='1' iicount='1942'/>
+<call method='834' instr='invokespecial'/>
+<inline_fail reason='excluded by CompilerOracle'/>
+<parse_done stamp='0.090'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.090'>
+<phase_done name='optimize_blocks' stamp='0.090'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.090'>
+<phase_done name='rangeCheckElimination' stamp='0.090'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.090'>
+<phase_done name='optimize_null_checks' stamp='0.090'/>
+</phase>
+<phase_done name='buildIR' stamp='0.090'/>
+</phase>
+<phase name='emit_lir' stamp='0.090'>
+<phase name='lirGeneration' stamp='0.090'>
+<phase_done name='lirGeneration' stamp='0.090'/>
+</phase>
+<phase name='linearScan' stamp='0.090'>
+<phase_done name='linearScan' stamp='0.090'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.090'/>
+</phase>
+<phase name='codeemit' stamp='0.090'>
+<phase_done name='codeemit' stamp='0.090'/>
+</phase>
+<phase name='codeinstall' stamp='0.090'>
+<phase_done name='codeinstall' stamp='0.095'/>
+</phase>
+<code_cache total_blobs='231' nmethods='1' adapters='145' free_code_cache='250570432'/>
+<task_done success='1' nmsize='520' count='0' stamp='0.095'/>
+</task>
+</compilation_log>
+<compilation_log thread='19971'>
+<fragment>
+<![CDATA[
+<start_compile_thread name='C2 CompilerThread2' thread='19971' process='37365' stamp='0.068'/>
+]]>
+</fragment>
+</compilation_log>
+<compilation_log thread='18947'>
+<start_compile_thread name='C2 CompilerThread0' thread='18947' process='37365' stamp='0.068'/>
+<task compile_id='2' method='concurrent/Bar sum ()V' bytes='11' count='1' iicount='1' blocking='1' stamp='0.096'>
+<phase name='parse' nodes='3' live='3' stamp='0.096'>
+<type id='723' name='void'/>
+<klass id='831' name='concurrent/Bar' flags='1'/>
+<method id='832' holder='831' name='sum' return='723' flags='0' bytes='11' compile_id='1' compiler='C1' level='3' iicount='1'/>
+<parse method='832' uses='1' stamp='0.096'>
+<bc code='183' bci='4'/>
+<klass id='728' name='java/lang/Object' flags='1'/>
+<method id='834' holder='728' name='&lt;init&gt;' return='723' flags='1' bytes='1' iicount='1942'/>
+<call method='834' count='0' prof_factor='1' inline='1'/>
+<inline_fail reason='failed initial checks'/>
+<direct_call bci='4'/>
+<parse_done nodes='85' live='84' memory='33072' stamp='0.096'/>
+</parse>
+<phase_done name='parse' nodes='87' live='62' stamp='0.096'/>
+</phase>
+<phase name='optimizer' nodes='87' live='62' stamp='0.096'>
+<phase name='escapeAnalysis' nodes='87' live='61' stamp='0.096'>
+<phase name='connectionGraph' nodes='89' live='63' stamp='0.096'>
+<phase_done name='connectionGraph' nodes='89' live='63' stamp='0.096'/>
+</phase>
+<phase_done name='escapeAnalysis' nodes='89' live='63' stamp='0.096'/>
+</phase>
+<phase name='ccp' nodes='89' live='63' stamp='0.096'>
+<phase_done name='ccp' nodes='89' live='63' stamp='0.096'/>
+</phase>
+<phase name='idealLoop' nodes='89' live='63' stamp='0.096'>
+<phase_done name='idealLoop' nodes='89' live='63' stamp='0.096'/>
+</phase>
+<phase_done name='optimizer' nodes='136' live='97' stamp='0.096'/>
+</phase>
+<phase name='matcher' nodes='136' live='97' stamp='0.096'>
+<phase_done name='matcher' nodes='84' live='84' stamp='0.096'/>
+</phase>
+<phase name='regalloc' nodes='98' live='98' stamp='0.096'>
+<regalloc attempts='0' success='1'/>
+<phase_done name='regalloc' nodes='105' live='105' stamp='0.096'/>
+</phase>
+<phase name='output' nodes='107' live='107' stamp='0.096'>
+<phase_done name='output' nodes='120' live='117' stamp='0.096'/>
+</phase>
+<code_cache total_blobs='233' nmethods='2' adapters='145' free_code_cache='250564160'/>
+<task_done success='1' nmsize='264' count='1' stamp='0.098'/>
+</task>
+</compilation_log>
+<hotspot_log_done stamp='0.099'/>
+</hotspot_log>

@@ -1,0 +1,236 @@
+CompilerOracle: dontinline *Bar.sum
+CompilerOracle: compileonly *Bar.sum
+Loaded disassembler from /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/server/hsdis-amd64.dylib
+Decoding compiled method 0x000000010b00fd10:
+Code:
+[Disassembling for mach='i386:x86-64']
+[Entry Point]
+[Constants]
+  # {method} {0x0000000106d48258} 'sum' '()V' in 'concurrent/Bar'
+  #           [sp+0x40]  (sp of caller)
+  0x000000010b00fe80: mov    0x8(%rsi),%r10d
+  0x000000010b00fe84: shl    $0x3,%r10
+  0x000000010b00fe88: cmp    %rax,%r10
+  0x000000010b00fe8b: jne    0x000000010af54e20  ;   {runtime_call}
+  0x000000010b00fe91: data32 data32 nopw 0x0(%rax,%rax,1)
+  0x000000010b00fe9c: data32 data32 xchg %ax,%ax
+[Verified Entry Point]
+  0x000000010b00fea0: mov    %eax,-0x14000(%rsp)
+  0x000000010b00fea7: push   %rbp
+  0x000000010b00fea8: sub    $0x30,%rsp
+  0x000000010b00feac: movabs $0x106d48438,%rdx  ;   {metadata(method data for {method} {0x0000000106d48258} 'sum' '()V' in 'concurrent/Bar')}
+  0x000000010b00feb6: mov    0xdc(%rdx),%edi
+  0x000000010b00febc: add    $0x8,%edi
+  0x000000010b00febf: mov    %edi,0xdc(%rdx)
+  0x000000010b00fec5: movabs $0x106d48258,%rdx  ;   {metadata({method} {0x0000000106d48258} 'sum' '()V' in 'concurrent/Bar')}
+  0x000000010b00fecf: and    $0x0,%edi
+  0x000000010b00fed2: cmp    $0x0,%edi
+  0x000000010b00fed5: je     0x000000010b00ff79
+  0x000000010b00fedb: movabs $0x7c0000f28,%rdx  ;   {metadata('java/lang/Object')}
+  0x000000010b00fee5: mov    0x60(%r15),%rax
+  0x000000010b00fee9: lea    0x10(%rax),%rdi
+  0x000000010b00feed: cmp    0x70(%r15),%rdi
+  0x000000010b00fef1: ja     0x000000010b00ff90
+  0x000000010b00fef7: mov    %rdi,0x60(%r15)
+  0x000000010b00fefb: mov    0xa8(%rdx),%rcx
+  0x000000010b00ff02: mov    %rcx,(%rax)
+  0x000000010b00ff05: mov    %rdx,%rcx
+  0x000000010b00ff08: shr    $0x3,%rcx
+  0x000000010b00ff0c: mov    %ecx,0x8(%rax)
+  0x000000010b00ff0f: xor    %rcx,%rcx
+  0x000000010b00ff12: mov    %ecx,0xc(%rax)
+  0x000000010b00ff15: xor    %rcx,%rcx          ;*new  ; - concurrent.Bar::sum@0 (line 9)
+
+  0x000000010b00ff18: mov    %rax,%rsi
+  0x000000010b00ff1b: movabs $0x106d48438,%rdi  ;   {metadata(method data for {method} {0x0000000106d48258} 'sum' '()V' in 'concurrent/Bar')}
+  0x000000010b00ff25: addq   $0x1,0x108(%rdi)
+  0x000000010b00ff2d: mov    %rax,%rsi          ;*invokespecial <init>
+                                                ; - concurrent.Bar::sum@4 (line 9)
+
+  0x000000010b00ff30: mov    %rax,0x20(%rsp)
+  0x000000010b00ff35: nop
+  0x000000010b00ff36: nop
+  0x000000010b00ff37: callq  0x000000010af55020  ; OopMap{[32]=Oop off=188}
+                                                ;*invokespecial <init>
+                                                ; - concurrent.Bar::sum@4 (line 9)
+                                                ;   {optimized virtual_call}
+  0x000000010b00ff3c: movabs $0x76ab713f0,%rsi  ;   {oop(a 'java/lang/Class' = 'concurrent/Bar')}
+  0x000000010b00ff46: mov    0x20(%rsp),%rax
+  0x000000010b00ff4b: mov    %rax,%r10
+  0x000000010b00ff4e: shr    $0x3,%r10
+  0x000000010b00ff52: mov    %r10d,0x68(%rsi)
+  0x000000010b00ff56: shr    $0x9,%rsi
+  0x000000010b00ff5a: movabs $0x101da1000,%rdi
+  0x000000010b00ff64: movb   $0x0,(%rsi,%rdi,1)
+  0x000000010b00ff68: lock addl $0x0,(%rsp)     ;*putstatic a
+                                                ; - concurrent.Bar::sum@7 (line 9)
+
+  0x000000010b00ff6d: add    $0x30,%rsp
+  0x000000010b00ff71: pop    %rbp
+  0x000000010b00ff72: test   %eax,-0x8032e78(%rip)        # 0x0000000102fdd100
+                                                ;   {poll_return}
+  0x000000010b00ff78: retq   
+  0x000000010b00ff79: mov    %rdx,0x8(%rsp)
+  0x000000010b00ff7e: movq   $0xffffffffffffffff,(%rsp)
+  0x000000010b00ff86: callq  0x000000010b00cf60  ; OopMap{rsi=Oop off=267}
+                                                ;*synchronization entry
+                                                ; - concurrent.Bar::sum@-1 (line 9)
+                                                ;   {runtime_call}
+  0x000000010b00ff8b: jmpq   0x000000010b00fedb
+  0x000000010b00ff90: mov    %rdx,%rdx
+  0x000000010b00ff93: callq  0x000000010b0091a0  ; OopMap{off=280}
+                                                ;*new  ; - concurrent.Bar::sum@0 (line 9)
+                                                ;   {runtime_call}
+  0x000000010b00ff98: jmpq   0x000000010b00ff18
+  0x000000010b00ff9d: nop
+  0x000000010b00ff9e: nop
+  0x000000010b00ff9f: mov    0x2a8(%r15),%rax
+  0x000000010b00ffa6: movabs $0x0,%r10
+  0x000000010b00ffb0: mov    %r10,0x2a8(%r15)
+  0x000000010b00ffb7: movabs $0x0,%r10
+  0x000000010b00ffc1: mov    %r10,0x2b0(%r15)
+  0x000000010b00ffc8: add    $0x30,%rsp
+  0x000000010b00ffcc: pop    %rbp
+  0x000000010b00ffcd: jmpq   0x000000010af7b4a0  ;   {runtime_call}
+  0x000000010b00ffd2: hlt    
+  0x000000010b00ffd3: hlt    
+  0x000000010b00ffd4: hlt    
+  0x000000010b00ffd5: hlt    
+  0x000000010b00ffd6: hlt    
+  0x000000010b00ffd7: hlt    
+  0x000000010b00ffd8: hlt    
+  0x000000010b00ffd9: hlt    
+  0x000000010b00ffda: hlt    
+  0x000000010b00ffdb: hlt    
+  0x000000010b00ffdc: hlt    
+  0x000000010b00ffdd: hlt    
+  0x000000010b00ffde: hlt    
+  0x000000010b00ffdf: hlt    
+[Stub Code]
+  0x000000010b00ffe0: nop                       ;   {no_reloc}
+  0x000000010b00ffe1: nop
+  0x000000010b00ffe2: nop
+  0x000000010b00ffe3: nop
+  0x000000010b00ffe4: nop
+  0x000000010b00ffe5: movabs $0x0,%rbx          ;   {static_stub}
+  0x000000010b00ffef: jmpq   0x000000010b00ffef  ;   {runtime_call}
+[Exception Handler]
+  0x000000010b00fff4: callq  0x000000010b00a8e0  ;   {runtime_call}
+  0x000000010b00fff9: mov    %rsp,-0x28(%rsp)
+  0x000000010b00fffe: sub    $0x80,%rsp
+  0x000000010b010005: mov    %rax,0x78(%rsp)
+  0x000000010b01000a: mov    %rcx,0x70(%rsp)
+  0x000000010b01000f: mov    %rdx,0x68(%rsp)
+  0x000000010b010014: mov    %rbx,0x60(%rsp)
+  0x000000010b010019: mov    %rbp,0x50(%rsp)
+  0x000000010b01001e: mov    %rsi,0x48(%rsp)
+  0x000000010b010023: mov    %rdi,0x40(%rsp)
+  0x000000010b010028: mov    %r8,0x38(%rsp)
+  0x000000010b01002d: mov    %r9,0x30(%rsp)
+  0x000000010b010032: mov    %r10,0x28(%rsp)
+  0x000000010b010037: mov    %r11,0x20(%rsp)
+  0x000000010b01003c: mov    %r12,0x18(%rsp)
+  0x000000010b010041: mov    %r13,0x10(%rsp)
+  0x000000010b010046: mov    %r14,0x8(%rsp)
+  0x000000010b01004b: mov    %r15,(%rsp)
+  0x000000010b01004f: movabs $0x1045d7296,%rdi  ;   {external_word}
+  0x000000010b010059: movabs $0x10b00fff9,%rsi  ;   {internal_word}
+  0x000000010b010063: mov    %rsp,%rdx
+  0x000000010b010066: and    $0xfffffffffffffff0,%rsp
+  0x000000010b01006a: callq  0x00000001044029d2  ;   {runtime_call}
+  0x000000010b01006f: hlt    
+[Deopt Handler Code]
+  0x000000010b010070: movabs $0x10b010070,%r10  ;   {section_word}
+  0x000000010b01007a: push   %r10
+  0x000000010b01007c: jmpq   0x000000010af563c0  ;   {runtime_call}
+  0x000000010b010081: hlt    
+  0x000000010b010082: hlt    
+  0x000000010b010083: hlt    
+  0x000000010b010084: hlt    
+  0x000000010b010085: hlt    
+  0x000000010b010086: hlt    
+  0x000000010b010087: hlt    
+Decoding compiled method 0x000000010b00f990:
+Code:
+[Entry Point]
+[Constants]
+  # {method} {0x0000000106d48258} 'sum' '()V' in 'concurrent/Bar'
+  #           [sp+0x20]  (sp of caller)
+  0x000000010b00fae0: mov    0x8(%rsi),%r10d
+  0x000000010b00fae4: shl    $0x3,%r10
+  0x000000010b00fae8: cmp    %r10,%rax
+  0x000000010b00faeb: jne    0x000000010af54e20  ;   {runtime_call}
+  0x000000010b00faf1: data32 xchg %ax,%ax
+  0x000000010b00faf4: nopl   0x0(%rax,%rax,1)
+  0x000000010b00fafc: data32 data32 xchg %ax,%ax
+[Verified Entry Point]
+  0x000000010b00fb00: mov    %eax,-0x14000(%rsp)
+  0x000000010b00fb07: push   %rbp
+  0x000000010b00fb08: sub    $0x10,%rsp         ;*synchronization entry
+                                                ; - concurrent.Bar::sum@-1 (line 9)
+
+  0x000000010b00fb0c: mov    0x60(%r15),%rax
+  0x000000010b00fb10: mov    %rax,%r10
+  0x000000010b00fb13: add    $0x10,%r10
+  0x000000010b00fb17: cmp    0x70(%r15),%r10
+  0x000000010b00fb1b: jae    0x000000010b00fb9b
+  0x000000010b00fb1d: mov    %r10,0x60(%r15)
+  0x000000010b00fb21: prefetchnta 0xc0(%r10)
+  0x000000010b00fb29: mov    $0xf80001e5,%r11d  ;   {metadata('java/lang/Object')}
+  0x000000010b00fb2f: movabs $0x0,%r10
+  0x000000010b00fb39: lea    (%r10,%r11,8),%r10
+  0x000000010b00fb3d: mov    0xa8(%r10),%r10
+  0x000000010b00fb44: mov    %r10,(%rax)
+  0x000000010b00fb47: movl   $0xf80001e5,0x8(%rax)  ;   {metadata('java/lang/Object')}
+  0x000000010b00fb4e: mov    %r12d,0xc(%rax)
+  0x000000010b00fb52: mov    %rax,%rbp          ;*new  ; - concurrent.Bar::sum@0 (line 9)
+
+  0x000000010b00fb55: mov    %rbp,%rsi
+  0x000000010b00fb58: data32 xchg %ax,%ax
+  0x000000010b00fb5b: callq  0x000000010af55020  ; OopMap{rbp=Oop off=128}
+                                                ;*invokespecial <init>
+                                                ; - concurrent.Bar::sum@4 (line 9)
+                                                ;   {optimized virtual_call}
+  0x000000010b00fb60: mov    %rbp,%r11
+  0x000000010b00fb63: shr    $0x3,%r11
+  0x000000010b00fb67: movabs $0x101da1000,%r10
+  0x000000010b00fb71: movabs $0x76ab713f0,%r8   ;   {oop(a 'java/lang/Class' = 'concurrent/Bar')}
+  0x000000010b00fb7b: mov    %r11d,0x68(%r8)
+  0x000000010b00fb7f: mov    %r8,%r11
+  0x000000010b00fb82: shr    $0x9,%r11
+  0x000000010b00fb86: mov    %r12b,(%r10,%r11,1)
+  0x000000010b00fb8a: lock addl $0x0,(%rsp)     ;*putstatic a
+                                                ; - concurrent.Bar::sum@7 (line 9)
+
+  0x000000010b00fb8f: add    $0x10,%rsp
+  0x000000010b00fb93: pop    %rbp
+  0x000000010b00fb94: test   %eax,-0x8032b9a(%rip)        # 0x0000000102fdd000
+                                                ;   {poll_return}
+  0x000000010b00fb9a: retq   
+  0x000000010b00fb9b: movabs $0x7c0000f28,%rsi  ;   {metadata('java/lang/Object')}
+  0x000000010b00fba5: xchg   %ax,%ax
+  0x000000010b00fba7: callq  0x000000010b010de0  ; OopMap{off=204}
+                                                ;*new  ; - concurrent.Bar::sum@0 (line 9)
+                                                ;   {runtime_call}
+  0x000000010b00fbac: jmp    0x000000010b00fb52
+  0x000000010b00fbae: mov    %rax,%rsi
+  0x000000010b00fbb1: jmp    0x000000010b00fbb6
+  0x000000010b00fbb3: mov    %rax,%rsi          ;*new  ; - concurrent.Bar::sum@0 (line 9)
+
+  0x000000010b00fbb6: add    $0x10,%rsp
+  0x000000010b00fbba: pop    %rbp
+  0x000000010b00fbbb: jmpq   0x000000010b00e5a0  ;   {runtime_call}
+[Stub Code]
+  0x000000010b00fbc0: movabs $0x0,%rbx          ;   {no_reloc}
+  0x000000010b00fbca: jmpq   0x000000010b00fbca  ;   {runtime_call}
+[Exception Handler]
+  0x000000010b00fbcf: jmpq   0x000000010af7b760  ;   {runtime_call}
+[Deopt Handler Code]
+  0x000000010b00fbd4: callq  0x000000010b00fbd9
+  0x000000010b00fbd9: subq   $0x5,(%rsp)
+  0x000000010b00fbde: jmpq   0x000000010af563c0  ;   {runtime_call}
+  0x000000010b00fbe3: hlt    
+  0x000000010b00fbe4: hlt    
+  0x000000010b00fbe5: hlt    
+  0x000000010b00fbe6: hlt    
+  0x000000010b00fbe7: hlt    

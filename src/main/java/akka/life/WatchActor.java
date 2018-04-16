@@ -25,7 +25,7 @@ public class WatchActor extends UntypedActor{
         if(msg instanceof Terminated){
             //这里简单打印一下，然后停止system
             logger.error(((Terminated)msg).getActor().path() + " has Terminated. now shutdown the system");
-            getContext().system().shutdown();
+            //getContext().system().shutdown();
         }else{
             unhandled(msg);
         }

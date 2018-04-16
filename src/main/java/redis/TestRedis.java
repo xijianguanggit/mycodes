@@ -9,16 +9,22 @@ import java.util.Set;
  */
 public class TestRedis {
 
+    private final static String REDIS_KEY_DEVICE_PRESENCE = "device_presence";
     public static void main(String[] args){
         Jedis jedis = new Jedis("10.170.191.64", 6379);
         jedis.auth("wow!nemo");
-      //
+
+
+        long high = System.currentTimeMillis() / 1000;
+        long low = high - 5 * 60;
+        Set<String> onLineSet =  jedis.zrangeByScore(REDIS_KEY_DEVICE_PRESENCE,low,high);
+        System.out.println(jedis.zrank(REDIS_KEY_DEVICE_PRESENCE,"d:10012106"));
+        System.out.println(onLineSet);
+      /*
         // 获取数据并输出
         Set<String> set = jedis.keys("CHARGE:*");
        System.out.println("success");
-//        for(String key:set) {
-//            System.out.println("List of stored keys:: "+key);
-//        }
+
         String key = "charge:test";
         jedis.sadd("charge:test","ddd");
         for(String s:jedis.smembers("charge:test")){
@@ -29,6 +35,6 @@ public class TestRedis {
         for(String s:jedis.smembers("charge:test")){
             System.out.println(s);
         }
-
+*/
     }
 }

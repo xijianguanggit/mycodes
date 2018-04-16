@@ -1,0 +1,68 @@
+task hello << {
+    println 'Hello Earth'
+}
+hello.doFirst {
+    println 'Hello Venus'
+}
+hello << {
+    println 'Hello Jupiter'
+}
+hello.doLast {
+    println 'Hello Mars'
+}
+hello << {
+    println "after $hello.name"
+}
+
+
+//base.12
+task myTask{
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties << {
+    println myTask.myProperty
+}
+
+
+//base.13 ant
+task loadfile <<{
+    def files = file('./antLoadfileResources').listFiles().sort()
+
+    files.each{ File file ->
+        if(file.isFile()){
+            ant.loadfile(srcFile:file,property:file.name)
+            println "****  $file.name *****"
+            println "${ant.properties[file.name]}"
+        }
+    }
+}
+
+//base.15 定义默认任务
+
+defaultTasks 'clean','run'
+
+task clean << {
+    println 'deault cleaning'
+}
+
+task run << {
+    println 'default running'
+}
+//base.16 根据选择的任务产生不同的输出
+task distribution << {
+    println "we build the zip with version=$version"
+}
+
+task release(dependsOn: 'distribution') << {
+    println "we release now"
+}
+
+gradle.taskGraph.whenReady{taskGraph ->
+    if(taskGraph.hasTask(release)){
+        version = "1.0"
+    }else{
+        version = "1.0-SNAPSHOT"
+    }
+
+}

@@ -1,11 +1,10 @@
-private String serialNumber;
-
-	private String serialSource;
-
-	private String enterpriseId;
-
-	private Long count;
-
-	private Integer months;
-
-	private Long startTime;
+private long startTime;
+	private long duration;
+	private String meetingName;
+	private int maxParticipantCount;
+	private boolean requirePassword;
+	private boolean autoRecord;
+	private String password;
+	private String meetingNumber;
+	private int autoMute;
+	private int smartMutePerson;

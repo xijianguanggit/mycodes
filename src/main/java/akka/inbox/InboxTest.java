@@ -52,7 +52,7 @@ public class InboxTest extends UntypedActor{
                     System.out.println("inboxTextActor is closing");
                 }else if(receive instanceof Terminated){//中断 ，和线程一个概念
                     System.out.println("inboxTextActor is closed");
-                    system.shutdown();
+                    //system.shutdown();
                     break;
                 }else {
                     System.out.println(receive);
