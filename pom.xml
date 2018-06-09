@@ -105,6 +105,12 @@
             <artifactId>guava</artifactId>
             <version>15.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>5.0.0.Alpha2</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.caucho</groupId>
@@ -147,6 +153,11 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.msgpack</groupId>
+            <artifactId>msgpack</artifactId>
+            <version>0.6.12</version>
         </dependency>
     </dependencies>
 

@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth2lab/lab01/authcode-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth2lab/lab01/client-server/pom.xml" />
       </list>
     </option>
   </component>

@@ -86,7 +86,7 @@ public class SignatureSample {
             String strToSign = computeStringToSign(reqPath, reqParams, jsonEntity, method);
             System.out.println("strToSign:"+strToSign);
             String mySignature = calculateHMAC(strToSign, token);
-            System.out.println("mySignature:"+mySignature);
+           // System.out.println("mySignature:"+mySignature);
             mySignature = mySignature.replace(" ", "+");
            // return mySignature;
             return URLEncoder.encode(mySignature, "utf-8");
@@ -144,12 +144,16 @@ public class SignatureSample {
 
     }
     static void test(){
-        String url = "/api/rest/external/v1/meeting/statistic/participant?timeEnd=1522656582041&timeBegin=1522483782040" +
+        String url = "/api/rest/external/v1/liveVideo3/enterprise/1cfc88433b62aacfb60658fa3317f7581457e9d1/conf/913514718612/live?confPwd=123456&enterpriseId=1cfc88433b62aacfb60658fa3317f7581457e9d1" ;
                 //"&signature=wgf59%2FVd8BXkc9B4tlSkVWEH6DSsiylEMtGgx131%2BOM%3D" +
-                "&enterpriseId=229b2309dfcf276c84e99d508a2c7a54249709fa";
-        String token = "0120aafdd489cf47de3cc551e13b6d60969b519ae8b3531481e1808b78aadafb";
+                //"&enterpriseId=229b2309dfcf276c84e99d508a2c7a54249709fa";
+        String token = "405c0e01ccd5c055017ff826d6530b514ee8967684823364b234c57b40d78251";
         //String jsonEntity = "{\"meetings\":\"912345678915,913811550578,913088888888,913581735469\"}";
-        System.out.println(new SignatureSample().computeSignature("", "GET", token, url));
+        String signature = new SignatureSample().computeSignature("", "POST", token, url);
+        System.out.println(signature);
+
+        System.out.println();
+        System.out.println(url+"&signature="+signature);
 
     }
     public static void main(String[] args) throws Exception {

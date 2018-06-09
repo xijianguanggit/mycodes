@@ -14,7 +14,7 @@ public class TestRedis {
         Jedis jedis = new Jedis("10.170.191.64", 6379);
         jedis.auth("wow!nemo");
 
-
+        new Thread(()->{System.out.print("d");}).start();
         long high = System.currentTimeMillis() / 1000;
         long low = high - 5 * 60;
         Set<String> onLineSet =  jedis.zrangeByScore(REDIS_KEY_DEVICE_PRESENCE,low,high);

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/oauth2lab/lab01/authcode-server/authcode-server.iml" filepath="$PROJECT_DIR$/oauth2lab/lab01/authcode-server/authcode-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2lab/lab01/client-server/client-server.iml" filepath="$PROJECT_DIR$/oauth2lab/lab01/client-server/client-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycodes.iml" filepath="$PROJECT_DIR$/mycodes.iml" />
     </modules>
   </component>
