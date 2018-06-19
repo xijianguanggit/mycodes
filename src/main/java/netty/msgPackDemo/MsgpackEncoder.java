@@ -8,12 +8,17 @@ import org.msgpack.MessagePack;
 /**
  * Created by wangdecheng on 09/06/2018.
  */
-public class MsgpackEncoder extends MessageToByteEncoder<Object> {
+public class MsgpackEncoder extends MessageToByteEncoder {
 
     @Override
     protected void encode(ChannelHandlerContext ctx,Object msg,ByteBuf bytebuf) throws Exception{
-
-        MessagePack messagePack = new MessagePack();
-
+        try {
+            MessagePack messagePack = new MessagePack();
+            byte[] raw = messagePack.write(msg);
+            bytebuf.writeBytes(raw);
+        }catch (Exception e){
+            e.printStackTrace();
+            throw e;
+        }
     }
 }

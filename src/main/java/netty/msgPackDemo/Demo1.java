@@ -13,6 +13,8 @@ import java.util.List;
 public class Demo1 {
 
     public static void main(String[] args) throws IOException {
+
+        System.out.println(new Integer(1) == Integer.valueOf(1));
         List<String> src = new ArrayList<String>();
         src.add("msgpack");
         src.add("kumofs");
