@@ -10,7 +10,7 @@ public class MultiLineToOneLine {
 
     public static void main(String[] args){
         try {
-            BufferedReader fileReader = new BufferedReader(new FileReader("data/MultiLineToOneLine"));
+         BufferedReader fileReader = new BufferedReader(new FileReader("data/MultiLineToOneLine"));
          StringBuilder sb = new StringBuilder();
           String line;
            while( (line=fileReader.readLine())!=null) {
